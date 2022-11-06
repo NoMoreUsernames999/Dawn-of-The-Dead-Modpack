@@ -1,5 +1,5 @@
-# The-Atlas-Project-Modpack
-**Repository for the dev team of "The Atlas Project" Modpack (Formerly "The Expanse"). Also for bug reports.** 
+# The-Dawn-of-The-Dead-Modpack
+**Repository for the dev team of the "Dawn of The Dead" modpack. Also for bug reports.** 
 See the to-do list at the bottom. 
 
 ===============================================
@@ -9,7 +9,6 @@ See the to-do list at the bottom.
 
 - [Intro](#all-following-sections-relevant-to-dev-team-only)
 - [Lost Books](#lostbooks)
-- [Flan's](#flan)
 - [Scripts](#scripts)
 - [Config](#config)
 - [To-Do List](#to-do-list)
@@ -19,15 +18,18 @@ See the to-do list at the bottom.
 ## Summary of the modpack:
 
 
-"The Atlas Project" Is a modpack that was born from my frustration with there being a lack of good space packs that properly utilized advanced rocketry and had unique planet designs. 
-The idea for this pack has been "cooking" for a long time now and started serious development at the end of 2021. It takes inspiration from my favorite games, movies, and books. And for those familiar with some of the works, you will notice many references and some similarities in the story.
-This is a questing pack about space exploration and mystery solving, built on a theme of survival and some hints of horror. You will have a relatively peaceful experience in many environments. And when things get tough, Instead of shooting your way through everything, you will usually be forced to run and hide. 
-With a fully integrated storyline, it features a main questline and many minor branching ones, along with a lot of optional lore that you can discover and use to learn about the backstory and world of "The Atlas Project," should you choose to. The setting takes place in the near future at the cusp of the expansion age that sees humanity take to the stars after the invention of the Epstein drive. A joint project between NASA, SpaceX, and the Weyland Utanni corporation leads to the construction of the first six starships capable of interstellar travel at near light speeds. The Explorer missions are tasked with traveling to one of six potentially habitable star systems, each in hopes of finding a planet suitable for human habitation. It's a 10 year voyage each way, and the risk of death is high. For this reason, the mission only accepts volunteers.
-The player is an engineer and volunteer that is accepted as the third crewmember of Explorer #6. 
-With the hopes of humanity propelling them forward, the crews are put into cryogenic sleep and launched into the void....
-Only for you to awake to the sound of alarms blaring. The player awakens from cryostasis in the ejected control module of their ship to find themselves crash landed on an unknown planet. As the sole survivor, and with no way to contact Earth, you must survive the harsh environment of a new world and figure out what went wrong. With the ship computer corrupted upon impact, you lose most of your blueprint data and must research machinery and technology again to fill in what's missing on your Personal Data Companion, your AI assistant that gives you useful info as you play and acts as a sort of in game wiki and tip provider.
-Research tech and scan salvaged ones from various structures to unlock new recipes in your PDA; explore fully custom built planets on your journey, and uncover what happened through looted newspapers, journals, and data logs.
-Your mission now; Survive and return to Earth.
+"Dawn of The Dead" is a hardcore zombie apocalypse horror themed modpack that, as is usual with my packs, was inspired by my dislike of existing zombie modpacks. Whether they were lackluster in not properly utilizing Lost Cities, didn't purely focus on zombies, or didn't support single player; I've not found a pure zombie apocalypse pack I've enjoyed. So I made my own. And I made it in the theme of hardcore realism. 
+Setting:
+In the near future, there has been an outbreak of an unknown virus in the fictional city of Nalova. Officials quickly dub the virus, which turns people into aggressive drones that relentlessly attack anything that moves, the "Genesis Virus." The public takes to calling the infected "zombies." 
+The city is overrun in a matter of days and the virus has started to slowly spread across the country. The military's attempts to quarantine the affected cities succeeds at first, but leaks in the perimeter leading to outbreaks in surrounding areas causes more towns and cities to fall each year. With the quarantine zone continuously growing larger, it becomes clear it will only be a temporary solution... Until suddenly a rare few are discovered to be immune to the virus. Many attempts at a vaccine are made, but none succeed.
+They are missing something, a key component to understanding the Genesis Virus...
+
+The player takes the role of a scientist who is immune to the virus. Your theory is that the key to a vaccine can only be found within Nalova city, where it all started. 
+After several attempts, you have managed to convince a faction within the government to support your mission. With limited resources, they're unable to send any soldiers with you, but allow any immune volunteers (players) to accompany your mission.
+In a last ditch effort, you travel to ground zero in search of answers. You are air dropped into the city with minimal resources near an abandoned lab that will serve as your base of operations, and allow you to conduct your research. 
+With only occasional supply drops from the outside, you will be forced to scavenge supplies from abandoned buildings while trying to collect samples from the infected, and avoiding any remaining survivors that may be left in the city! 
+With limited ammo and food, you'll have to conserve your bullets by collecting materials to craft make-shift weapons with an entirely new crafting system; go on supply runs to collect non perishables or start your own rooftop garden; fortify your base with traps to protect against the unrelenting hoard; and conduct experiments with samples collected from the infected. 
+But zombies aren't the only thing you'll have to watch out for. Temperature, starvation, sanity, injury, other survivors (NPC, or even players!), and even unpredictable weather could all be your downfall. In a more forgiving hardcore mode, all players will have a limited number of lives representing their true injury level. When you "die," your character simply manages to escape, albeit injured, back to your base (respawn). You keep your inventory, but you lose a life. In a race against time, your goal is to find a cure before you run out of lives and die for real, marking the failure of your mission and the spread of the virus across the globe! 
 
 ===============================================
 
@@ -67,19 +69,13 @@ The last thing you can do with your books, is control their drop conditions usin
 Note that weight values that are extremely low, like 1, will cause the book to likely never be seen. Check the DropSettings text file in the LostBooks folder for a more detailed explenation of how to do this, and **do not use weights higher than 100.**  
 
 
-## Flan: 
-
-
-If you have experience editing flan packs, then you know what this is for. If you have not been assigned to this folder, don't touch it. It's rather complicated and will be mostly handled by me. 
-
-
 ## Scripts: 
 
 
 For all the script files. **FILES UPLOADED HERE MUST END WITH THE EXTENDED .zs.txt EXTENSION OR THEY WON'T BE APPROVED!** You will have to change the extention to just .zs when you download the file for client use. 
-If you are adding a new script file that doesn't already exist, each mod or major function should have its own file. E.g any removals or modifications to Minecraft recipes should go in MinecraftRemoval.zs, Thermal expansion in ThermalEdit.zs, etc. For mods like Advanced Rocketry, it may be necessary to seperate its machine recipes into seperate files for each one. Never mix recipes with other script functions, these should each go in their own file (compatSkills, JEI edits, etc). 
+If you are adding a new script file that doesn't already exist, each mod or major function should have its own file. E.g any removals or modifications to Minecraft recipes should go in MCRecipeRemoval.zs, Thermal expansion in ThermalEdit.zs, etc. For certain mods, it may be necessary to seperate its machine recipes into seperate files for each one. Never mix recipes with other script functions, these should each go in their own file (compatSkills, JEI edits, etc). 
 For things that aren't obvious like non recipe scripts, loops, or other functions; remember to add in file comments to make sure other devs reading your scripts know what does what. 
-*Footnote: Where possible, use recipes.remove(<ID>) instead of typing out the full recipe with all its compenents. This abbreviation works in most cases and makes things more readable. Only use the longer removal script that specifies the recipe items if this doesn't work (sometimes it doesn't).*
+*Footnote: Where possible, use recipes.remove(<ID>) instead of typing out the full recipe with all its compenents. This abbreviation works in most cases and makes things more readable. Only use the longer removal script that specifies the recipe items if this doesn't work (sometimes it doesn't), or if the item has several recipes and you only want to remove a specific one.*
 
 
 ## Config: 
@@ -91,33 +87,5 @@ All commits **must** have a description in the notes of what they changed. This 
 
 ## TO-DO list 
   
-  When you pick something on the list to do, if it is something that can only be done by a single person at a time, state so in the Discord to notify people that someone is working on the task so that people don't waste time doing the same thing twice (Does not apply to "Test" tasks. The more people testing something, the better). When you pick or finish something from the to-do list, go to the projects tab and move the note card of that task to the appropriate collumn. Please do this as it helps organize, and organized projects move faster. You can use the below list to see what has been finished at a quick glance, or go to the organization project in the projects tab at the top of the page for more specific info on certain tasks.
-Beta testers should report the results of any tests they do in the Discord's "Discussion-E" channel. The more detailed your descriptions, the better. Any bugs testers discover should be reported here in the issue tracker. 
 
-
-**Current to-do list, Updated as development progresses:**
-
-- [ ] Disable all HBM weapon and explosive recipes that use the assembler. 
-- [ ] Finalize Mars and Earth building style. 
-- [ ] Fill in energy consumption spreadsheet. 
-- [x] Finalize planet designs, names, and progression order. 
-- [ ] Finish resourcepack. 
-- [x] Build starting planet. 
-- [ ] Finish music file conversions. 
-- [ ] Create text log console interface program for ComputerCraft. 
-- [ ] Create missile targeting calculator program for manual target designators. 
-- [x] Test AR oxygen system in warp space. 
-- [ ] Test jumping with AR oxygen. 
-- [ ] Test Reborn mobs latency with high mob counts. 
-- [ ] Test AR station dimension latency and observatories. 
-- [ ] Test AR rocket entity tps. 
-- [ ] Test deep space tps while jumping with Recurrent Complex and CofH generating asteroids instead of warp.
-- [ ] Test squid spawning with PVJ squid block enabled, and with squid spawning replaced with inControl. 
-- [ ] Test all HBM machines (and doors) with warpdrive jumping and rotation. Report seperately and condition of multiblocks post jump.
-- [ ] Test tps with pumps that physically consume water. 
-- [ ] Test Forge pregenerator with all DIMs. 
-- [ ] Test HBM geysers in unloaded chunks causing extreme particle lag when reloaded after a while, issue #14 (fixed in last PR, test to confirm issue is fixed): https://github.com/TheOriginalGolem/Hbm-s-Nuclear-Tech-GIT/issues/14 
-- [ ] Test reproducing issues related to JEID to confirm safe use: https://github.com/DimensionalDevelopment/JustEnoughIDs/issues
-- [x] Test hill variant biome generation to confirm whether local issue [#14](https://github.com/NoMoreUsernames999/The-Atlas-Project-Modpack/issues/14) is a bug or not.
-  
  
