@@ -18,10 +18,11 @@ The only formatting lost books mod supports is:
 
 New lines, like above,
   Spaces, 
-And new pages. A new page can be started using this symbol at the end of a line of text.Any following line, like this one, will appear on the next page of the in game book (They must be connected like this. If you hit enter after using the arrow symbol,
+And new pages. A new page can be started using this symbol at the end of a line of text.(symbol)Any following line, like this one, will appear on the next page of the in game book (They must be connected like this. If you hit enter after using the arrow symbol,
 the first line on the new page will be one line down from the top. Useful if writing journal entries, or scene breaks. E.g: 
-Entry 1: body text.Entry 2: 
-this will appear on the next page.
+Entry 1: body text.(symbol)Entry 2: 
+this will appear on the next page.(symbol)
+(Apprently Github doesn't support the symbol. It looks like an arrow pointing up, you'll have to look at an example from a book file in the modpack).
 
 Currently no other formatting is supported. Don't forget to set your text editor to plain text, or else the book will show up blank in game. 
 The actual name of the .book file doesn't matter as long as it doesn't end with a number, but give it a descriptive name like (e.g if it's a new article containing some lore, and it's split into four books) newsArticleOne.book, and not something like one.book.
