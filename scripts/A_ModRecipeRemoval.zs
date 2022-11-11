@@ -3,25 +3,6 @@ import crafttweaker.item.IItemStack;
 print("ModRecipeRemoval starting!"); //Mark beggining of script. 
 
 
-//========================================Barrels Drums Storage & More:========================================
-
-
-print("BDS&M removals starting!"); //======Mark start of phase.
-
-recipes.remove(<bdsandm:upgrade>);
-recipes.remove(<bdsandm:upgrade:1>);
-recipes.remove(<bdsandm:upgrade:2>);
-recipes.remove(<bdsandm:upgrade:3>);
-recipes.remove(<bdsandm:crate_key>);
-recipes.remove(<bdsandm:wood_crate>);
-recipes.remove(<bdsandm:wood_barrel>);
-recipes.remove(<bdsandm:metal_crate>);
-recipes.remove(<bdsandm:metal_barrel>);
-recipes.remove(<bdsandm:shipping_container>);
-
-print("BDS&M removals complete"); //======Mark end of phase. 
-
-
 //========================================Cooking For Blockheads:========================================
 
 
@@ -51,7 +32,8 @@ print("Cooking for blockheads removals complete"); //======Mark end of phase.
 print("Grappling hook removals starting!"); //======Mark start of phase.
 
 recipes.remove(<grapplemod:grapplinghook>);
-recipes.remove(<grapplemod:block_grapple_modifier>);
+
+/* recipes.remove(<grapplemod:block_grapple_modifier>);
 recipes.remove(<grapplemod:repeller>);
 recipes.remove(<grapplemod:baseupgradeitem>);
 recipes.remove(<grapplemod:launcheritem>);
@@ -61,7 +43,16 @@ recipes.remove(<grapplemod:rockethook>);
 recipes.remove(<grapplemod:motorhook>);
 recipes.remove(<grapplemod:smarthook>);
 recipes.remove(<grapplemod:doublemotorhook>);
-recipes.remove(<grapplemod:rocketdoublemotorhook>);
+recipes.remove(<grapplemod:rocketdoublemotorhook>); */
+
+val removedGrapple = ["upgrade", "smart", "repeller", "ender", "magnet", "motor", "double"] as string[];
+for i in loadedMods["grapplemod"].items {
+for possible in removedMW { 
+    if i.name.indexOf(possible) > -1 {
+      mods.jei.JEI.removeAndHide(i);  
+   	 	}
+	}
+}
 
 print("Grappling hook removals complete"); //======Mark end of phase. 
 
@@ -137,7 +128,7 @@ print("wastelandgrocers removals starting!"); //======Mark start of phase.
 recipes.remove(<wastelandgrocers:needle>);
 recipes.remove(<wastelandgrocers:can_opener>);
 recipes.remove(<wastelandgrocers:med_bandaid>);
-recipes.remove(<wastelandgrocers:med_bandage_wrap><wastelandgrocers:med_bandage_wrap>);
+recipes.remove(<wastelandgrocers:med_bandage_wrap>);
 recipes.remove(<wastelandgrocers:med_first_aid>);
 recipes.remove(<wastelandgrocers:med_trauma_kit>);
 
@@ -164,6 +155,7 @@ recipes.removeByMod("sophisticatedwolves");
 recipes.removeByMod("reevess_furniture_mod");
 recipes.removeByMod("pvj");
 recipes.removeByMod("industrialrenewal");
+recipes.removeByMod("bdsandm");
 
 print("Misc removals complete!"); //======Mark end of phase.
 
