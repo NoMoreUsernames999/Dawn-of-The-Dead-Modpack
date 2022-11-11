@@ -154,6 +154,16 @@ recipes.remove(<burlapsack:burlap_sack>);
 recipes.remove(<energymeters:meter>);
 recipes.removeByMod("firstaid");
 recipes.removeByMod("modularmachinery");
+recipes.removeByMod("spartanshields");
+recipes.removeByMod("locks");
+recipes.removeByMod("astikorcarts");
+recipes.removeByMod("simplycats");
+recipes.removeByMod("xplosives");
+recipes.remove(<dynamicstealth:handmirror>);
+recipes.removeByMod("sophisticatedwolves"); 
+recipes.removeByMod("reevess_furniture_mod");
+recipes.removeByMod("pvj");
+recipes.removeByMod("industrialrenewal");
 
 print("Misc removals complete!"); //======Mark end of phase.
 
