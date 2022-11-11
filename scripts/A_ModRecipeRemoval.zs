@@ -96,6 +96,55 @@ for possible in removedMW {
 print("Modern warfare removals complete"); //======Mark end of phase.
 
 
+//========================================fishing made better:========================================
+
+print("fishing made better removals starting!"); //======Mark start of phase.
+
+recipes.remove(<fishingmadebetter:baitbox>);
+recipes.remove(<fishingmadebetter:fishing_rod_iron>);
+recipes.remove(<fishingmadebetter:fishing_rod_diamond>);
+recipes.remove(<fishingmadebetter:fillet_knife_wood>);
+recipes.remove(<fishingmadebetter:fillet_knife_iron>);
+recipes.remove(<fishingmadebetter:fillet_knife_diamond>);
+recipes.remove(<fishingmadebetter:scaling_knife_wood>);
+recipes.remove(<fishingmadebetter:scaling_knife_iron>);
+recipes.remove(<fishingmadebetter:scaling_knife_diamond>);
+recipes.remove(<fishingmadebetter:fish_tracker_iron>);
+recipes.remove(<fishingmadebetter:fish_tracker_gold>);
+recipes.remove(<fishingmadebetter:fish_tracker_diamond>);
+recipes.remove(<fishingmadebetter:fish_tracker_obsidian>);
+recipes.remove(<fishingmadebetter:fish_tracker_void>);
+recipes.remove(<fishingmadebetter:reel_basic>);
+recipes.remove(<fishingmadebetter:reel_fast>);
+recipes.remove(<fishingmadebetter:reel_long>);
+recipes.remove(<fishingmadebetter:bobber_basic>);
+recipes.remove(<fishingmadebetter:bobber_obsidian>);
+recipes.remove(<fishingmadebetter:bobber_lightweight>);
+recipes.remove(<fishingmadebetter:bobber_heavy>);
+recipes.remove(<fishingmadebetter:bobber_void>);
+recipes.remove(<<fishingmadebetter:hook_basic>);
+recipes.remove(<fishingmadebetter:hook_shiny>);
+recipes.remove(<fishingmadebetter:hook_barbed>);
+recipes.remove(<fishingmadebetter:hook_magnetic>);
+
+print("fishing made better removals complete"); //======Mark end of phase.
+
+
+//========================================wastelandgrocers:========================================
+
+print("wastelandgrocers removals starting!"); //======Mark start of phase.
+
+recipes.remove(<wastelandgrocers:needle>);
+recipes.remove(<wastelandgrocers:can_opener>);
+recipes.remove(<wastelandgrocers:med_bandaid>);
+recipes.remove(<wastelandgrocers:med_bandage_wrap><wastelandgrocers:med_bandage_wrap>);
+recipes.remove(<wastelandgrocers:med_first_aid>);
+recipes.remove(<wastelandgrocers:med_trauma_kit>);
+
+
+print("wastelandgrocers removals complete"); //======Mark end of phase.
+
+
 //========================================Misc Mods:======================================== (For mods that don't have enough items to justify their own section).
 
 
