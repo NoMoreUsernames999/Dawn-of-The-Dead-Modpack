@@ -32,9 +32,9 @@ print("Cooking for blockheads removals complete"); //======Mark end of phase.
 print("Grappling hook removals starting!"); //======Mark start of phase.
 
 recipes.remove(<grapplemod:grapplinghook>);
+recipes.remove(<grapplemod:block_grapple_modifier>);
 
-/* recipes.remove(<grapplemod:block_grapple_modifier>);
-recipes.remove(<grapplemod:repeller>);
+/* recipes.remove(<grapplemod:repeller>);
 recipes.remove(<grapplemod:baseupgradeitem>);
 recipes.remove(<grapplemod:launcheritem>);
 recipes.remove(<grapplemod:enderhook>);
