@@ -32,22 +32,10 @@ print("Cooking for blockheads removals complete"); //======Mark end of phase.
 print("Grappling hook removals starting!"); //======Mark start of phase.
 
 recipes.remove(<grapplemod:grapplinghook>);
-recipes.remove(<grapplemod:block_grapple_modifier>);
 
-/* recipes.remove(<grapplemod:repeller>);
-recipes.remove(<grapplemod:baseupgradeitem>);
-recipes.remove(<grapplemod:launcheritem>);
-recipes.remove(<grapplemod:enderhook>);
-recipes.remove(<grapplemod:magnethook>);
-recipes.remove(<grapplemod:rockethook>);
-recipes.remove(<grapplemod:motorhook>);
-recipes.remove(<grapplemod:smarthook>);
-recipes.remove(<grapplemod:doublemotorhook>);
-recipes.remove(<grapplemod:rocketdoublemotorhook>); */
-
-val removedGrapple = ["upgrade", "smart", "repeller", "ender", "magnet", "motor", "double"] as string[];
+val removedGrapple = ["upgrade", "smarthook", "repellerhook", "enderhook", "magnethook", "motorhook", "doublemotorhook", "rocketdoublemotorhook", "launcheritem", "block"] as string[];
 for i in loadedMods["grapplemod"].items {
-for possible in removedMW { 
+for possible in removedGrapple { 
     if i.name.indexOf(possible) > -1 {
       mods.jei.JEI.removeAndHide(i);  
    	 	}
@@ -87,13 +75,13 @@ for possible in removedMW {
 print("Modern warfare removals complete"); //======Mark end of phase.
 
 
-//========================================fishing made better:========================================
+//========================================Fishing Made Better:========================================
 
-print("fishing made better removals starting!"); //======Mark start of phase.
+print("Fishing made better removals starting!"); //======Mark start of phase.
 
 recipes.remove(<fishingmadebetter:baitbox>);
-recipes.remove(<fishingmadebetter:fishing_rod_iron>);
-recipes.remove(<fishingmadebetter:fishing_rod_diamond>);
+recipes.removeShaped(<fishingmadebetter:fishing_rod_iron>, [[null,null,<ore:ingotiron>],[null,<ore:ore:ingotiron>,<fishingmadebetter:bobber_basic>],[<ore:ore:ingotiron>,<fishingmadebetter:reel_basic>,<fishingmadebetter:hook_basic>]]);
+recipes.removeShaped(<fishingmadebetter:fishing_rod_diamond>, [[null,null,<minecraft:diamond>],[null,<minecraft:diamond>,<fishingmadebetter:bobber_basic>],[<minecraft:diamond>,<fishingmadebetter:reel_basic>,<fishingmadebetter:hook_basic>]]);
 recipes.remove(<fishingmadebetter:fillet_knife_wood>);
 recipes.remove(<fishingmadebetter:fillet_knife_iron>);
 recipes.remove(<fishingmadebetter:fillet_knife_diamond>);
@@ -113,15 +101,16 @@ recipes.remove(<fishingmadebetter:bobber_obsidian>);
 recipes.remove(<fishingmadebetter:bobber_lightweight>);
 recipes.remove(<fishingmadebetter:bobber_heavy>);
 recipes.remove(<fishingmadebetter:bobber_void>);
-recipes.remove(<<fishingmadebetter:hook_basic>);
+recipes.remove(<fishingmadebetter:hook_basic>);
 recipes.remove(<fishingmadebetter:hook_shiny>);
 recipes.remove(<fishingmadebetter:hook_barbed>);
 recipes.remove(<fishingmadebetter:hook_magnetic>);
 
-print("fishing made better removals complete"); //======Mark end of phase.
+print("Fishing made better removals complete"); //======Mark end of phase.
 
 
-//========================================wastelandgrocers:========================================
+//========================================Wastelandgrocers:========================================
+
 
 print("wastelandgrocers removals starting!"); //======Mark start of phase.
 
@@ -136,6 +125,86 @@ recipes.remove(<wastelandgrocers:med_trauma_kit>);
 print("wastelandgrocers removals complete"); //======Mark end of phase.
 
 
+//========================================Project Vibrant Journeys:========================================
+
+
+print("PVJ removals starting!"); //======Mark start of phase.
+
+recipes.remove(<pvj:sugarcane_juice>);
+recipes.remove(<pvj:cactus_salad>);
+recipes.remove(<pvj:cracked_coconut>);
+recipes.remove(<pvj:cobblestone_brick>);
+recipes.remove(<pvj:basalt_brick>);
+recipes.remove(<pvj:marble_brick>);
+
+val removedPVJ = ["slab", "stairs", "wall", "boat", "trapdoor", "door", "fence", "planks"] as string[];
+for i in loadedMods["pvj"].items {
+for possible in removedPVJ { 
+    if i.name.indexOf(possible) > -1 {
+      recipes.remove(i);  
+   	 	}
+	}
+}
+
+print("PVJ removals complete"); //======Mark end of phase.
+
+
+//========================================Better Animals Plus:========================================
+
+
+print("BetterAnimals+ removals starting!"); //======Mark start of phase.
+
+val removedBAP = ["hirschgeistskullwearable", "cape", "handoffate"] as string[];
+for i in loadedMods["betteranimalsplus"].items {
+for possible in removedBAP { 
+    if i.name.indexOf(possible) > -1 {
+      recipes.remove(i); 
+   	 	}
+	}
+}
+
+mods.jei.JEI.hide(<betteranimalsplus:hirschgeistskullwearable>);
+mods.jei.JEI.hide(<betteranimalsplus:handoffate>);
+
+print("BetterAnimals+ removals complete"); //======Mark end of phase.
+
+
+//========================================Aquaculture:========================================
+
+
+print("Aquaculture removals starting!"); //======Mark start of phase.
+
+recipes.remove(<aquaculture:food:6>);
+
+val removedF = ["neptunium", "pick"] as string[];
+for i in loadedMods["aquaculture"].items {
+for possible in removedF { 
+    if i.name.indexOf(possible) > -1 {
+      mods.jei.JEI.removeAndHide(i); 
+   	 	}
+	}
+}
+
+print("Aquaculture removals complete"); //======Mark end of phase.
+
+
+//========================================Camera Obscura:========================================
+
+
+print("CameraObscura removals starting!"); //======Mark start of phase.
+
+recipes.remove(<cameraobscura:csitem:1>);
+recipes.remove(<cameraobscura:filter:*>);
+mods.jei.JEI.removeAndHide(<cameraobscura:csitem:6>);
+mods.jei.JEI.removeAndHide(<cameraobscura:csitem:7>);
+mods.jei.JEI.removeAndHide(<cameraobscura:csitem:3>);
+mods.jei.JEI.removeAndHide(<cameraobscura:sdcard>);
+mods.jei.JEI.removeAndHide(<cameraobscura:polaroid_stack>);
+mods.jei.JEI.removeAndHide(<cameraobscura:vintage_photo>);
+
+print("CameraObscura removals complete"); //======Mark end of phase.
+
+
 //========================================Misc Mods:======================================== (For mods that don't have enough items to justify their own section).
 
 
@@ -144,18 +213,30 @@ print("Misc removals starting!"); //======Mark start of phase.
 recipes.remove(<burlapsack:burlap_sack>);
 recipes.remove(<energymeters:meter>);
 recipes.removeByMod("firstaid");
-recipes.removeByMod("modularmachinery");
 recipes.removeByMod("spartanshields");
 recipes.removeByMod("locks");
 recipes.removeByMod("astikorcarts");
-recipes.removeByMod("simplycats");
+recipes.remove(<simplycats:treat_bag>);
+recipes.remove(<simplycats:laser_pointer>);
+recipes.remove(<simplycats:window_perch_dark_oak>);
+recipes.remove(<simplycats:window_perch_acacia>);
+recipes.remove(<simplycats:window_perch_jungle>);
+recipes.remove(<simplycats:window_perch_birch>);
+recipes.remove(<simplycats:window_perch_oak>);
+recipes.remove(<simplycats:window_perch_spruce>);
 recipes.removeByMod("xplosives");
 recipes.remove(<dynamicstealth:handmirror>);
 recipes.removeByMod("sophisticatedwolves"); 
 recipes.removeByMod("reevess_furniture_mod");
-recipes.removeByMod("pvj");
 recipes.removeByMod("industrialrenewal");
 recipes.removeByMod("bdsandm");
+recipes.removeByMod("mutantbeasts");
+recipes.removeByMod("qualitytools");
+recipes.removeByMod("of");
+recipes.removeByMod("gaspunk");
+recipes.removeByMod("air_support");
+recipes.removeByMod("mod_lavacow");
+recipes.removeByMod("floodlights");
 
 print("Misc removals complete!"); //======Mark end of phase.
 
