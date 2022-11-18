@@ -237,6 +237,7 @@ recipes.removeByMod("gaspunk");
 recipes.removeByMod("air_support");
 recipes.removeByMod("mod_lavacow");
 recipes.removeByMod("floodlights");
+recipes.removeByMod("Immersive Vehicles");
 
 print("Misc removals complete!"); //======Mark end of phase.
 
