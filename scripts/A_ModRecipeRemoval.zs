@@ -204,18 +204,6 @@ mods.jei.JEI.removeAndHide(<cameraobscura:vintage_photo>);
 
 print("CameraObscura removals complete"); //======Mark end of phase.
 
-//========================================Immersiv Vehicles:========================================
-
-
-print("Immersiv Vehicles removals starting!"); //======Mark start of phase.
-
-
-recipes.removeByMod("MTS_Official_Pack_V23");
-recipes.removeByMod("Immersive Vehicles");
-recipes.removeByMod("Helicopter_Pack");
-
-
-print("Immersiv Vehicles removals complete"); //======Mark end of phase.
 
 //========================================Misc Mods:======================================== (For mods that don't have enough items to justify their own section).
 
@@ -249,6 +237,7 @@ recipes.removeByMod("gaspunk");
 recipes.removeByMod("air_support");
 recipes.removeByMod("mod_lavacow");
 recipes.removeByMod("floodlights");
+recipes.removeByMod("Immersive Vehicles");
 
 print("Misc removals complete!"); //======Mark end of phase.
 
