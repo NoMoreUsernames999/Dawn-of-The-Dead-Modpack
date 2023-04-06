@@ -1,0 +1,102 @@
+{
+  "zombie": {
+    "name": "Zombie Horde",
+    "selector": {
+      "weight": 1,
+      "dimension": {
+        "type": "exclude",
+        "dimensions": [0]
+      }
+    },
+
+     "commands": 
+    {
+      "start": [
+          "/playsound zombieawareness:target master @p ~ ~ ~ 2"
+      ]
+    },
+
+    "messages": {
+      "start": "A horde of zombies rush towards the sound!",
+      "end": "The zombie have been neutralized!",
+      "warn": {
+        "ticks": 12000,
+        "message": "The faint smell of zombie flesh hangs in the morning air..."
+      }
+    },
+    "waves": [
+      {
+        "delayTicks": [0],
+        "groups": [
+          {
+            "weight": 1,
+            "forceSpawn": true,
+            "mobs": [
+              {
+                "id": "zombie",
+                "count": [12, 14],
+                "spawn": {
+                  "type": "ground",
+                  "rangeXZ": [10, 20],
+                  "rangeY": 10
+                }
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "delayTicks": [500],
+        "groups": [
+          {
+            "weight": 1,
+            "forceSpawn": true,
+            "mobs": [
+              {
+                "id": "zombie_reinforcement",
+                "count": [18, 20],
+                "spawn": {
+                  "type": "ground",
+                  "rangeXZ": [10, 20],
+                  "rangeY": 10
+                }
+              },
+              {
+                "id": "zombie",
+                "count": [8, 10],
+                "spawn": {
+                  "type": "ground",
+                  "rangeXZ": [10, 20],
+                  "rangeY": 10
+                }
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "delayTicks": [1000],
+        "groups": [
+          {
+            "weight": 1,
+            "forceSpawn": true,
+            "mobs": [
+              {
+                "id": "zombie_reinforcement",
+                "count": [18, 20],
+                "spawn": {
+                  "type": "ground",
+                  "rangeXZ": [10, 20],
+                  "rangeY": 10
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+

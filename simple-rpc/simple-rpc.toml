@@ -1,0 +1,263 @@
+
+#General Config Section. See https://readme.firstdarkdev.xyz/simple-rpc/introduction/
+[general]
+	#The Application ID of the Discord App to use
+	applicationID = 1029187531318771773
+	#Enable/Disable the mod
+	enabled = true
+	#Enable/Disable debugging mode. WARNING: MAY CAUSE LOG SPAM!
+	debugging = false
+	#Enable/Disable the in game config screen. ONLY AVAILABLE WHEN CLOTH CONFIG IS INSTALLED!
+	configScreen = false
+	#Display the Icon and Pack Name in place of LargeImage from compatible launchers. DOES NOT WORK WITH CUSTOM APPS! ONLY THE DEFAULT ONE!
+	launcherIntegration = false
+	#Internal Version Number. NO TOUCHY!
+	version = 16
+
+#The Game Loading event
+[init]
+	#Enable/Disable the Game Loading Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is gearing up."
+	#The second line of text under the app name
+	state = "Game starting..."
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "titleimage"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Dawn of The Dead"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Minecraft 1.12.2"
+	#The buttons to display on Discord
+	[[init.buttons]]
+		label = "Modpack Page"
+		url = "https://www.curseforge.com/minecraft/modpacks/dawn-of-the-dead"
+
+	[[init.buttons]]
+		label = "Modpack Trailer: (Placeholder)"
+		url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+#The Main Menu event
+[main_menu]
+	#Enable/Disable the Main Menu Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is resting at their base."
+	#The seconds line of text under the app name
+	state = "Chilling in the menu."
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "titleimage"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Dawn of The Dead"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Minecraft 1.12.2"
+	#The buttons to display on Discord
+	[[main_menu.buttons]]
+		label = "Modpack Page"
+		url = "https://www.curseforge.com/minecraft/modpacks/dawn-of-the-dead"
+
+	[[main_menu.buttons]]
+		label = "Modpack Trailer: (Placeholder)"
+		url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+#The Server List event
+[server_list]
+	#Enable/Disable the Server List Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is looking for other survivors."
+	#The second line of text under the app name
+	state = "Searching server lists."
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "titleimage"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Dawn of The Dead"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Minecraft 1.12.2"
+	#The buttons to display on Discord
+	[[server_list.buttons]]
+		label = "Modpack Page"
+		url = "https://www.curseforge.com/minecraft/modpacks/dawn-of-the-dead"
+
+	[[server_list.buttons]]
+		label = "Modpack Trailer: (Placeholder)"
+		url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+#The Realms Screen event
+[realms_list]
+	#Enable/Disable the Realms Screen Event
+	enabled = false
+	#The first line of text under the app name
+	description = "%player% is looking for a Realm"
+	#The second line of text under the app name
+	state = "Browsing Realms"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "mclogonew"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Join Game Event
+[join_game]
+	#Enable/Disable the Join Game Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is leaving their base."
+	#The second line of text under the app name
+	state = "Joining game."
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "titleimage"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Dawn of The Dead"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Minecraft 1.12.2"
+	#The buttons to display on Discord
+	[[join_game.buttons]]
+		label = "Modpack Page"
+		url = "https://www.curseforge.com/minecraft/modpacks/dawn-of-the-dead"
+
+	[[join_game.buttons]]
+		label = "Modpack Trailer: (Placeholder)"
+		url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+#The Single Player Event
+[single_player]
+	#Enable/Disable the Single Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is surviving alone."
+	#The second line of text under the app name
+	state = "Playing Singleplayer."
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "titleimage"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Dawn of The Dead"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Minecraft 1.12.2"
+	#The buttons to display on Discord
+	[[single_player.buttons]]
+		label = "Modpack Page"
+		url = "https://www.curseforge.com/minecraft/modpacks/dawn-of-the-dead"
+
+	[[single_player.buttons]]
+		label = "Modpack Trailer: (Placeholder)"
+		url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+#The Multi Player Event
+[multi_player]
+	#Enable/Disable the Multi Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is surviving on %servername% with %players% others."
+	#The second line of text under the app name
+	state = "Playing online."
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "titleimage"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Dawn of The Dead"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Minecraft 1.12.2"
+	#The buttons to display on Discord
+	[[multi_player.buttons]]
+		label = "Modpack Page"
+		url = "https://www.curseforge.com/minecraft/modpacks/dawn-of-the-dead"
+
+	[[multi_player.buttons]]
+		label = "Modpack Trailer: (Placeholder)"
+		url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+#The Realms Game Event
+[realms]
+	#Enable/Disable the Realms Game Event
+	enabled = false
+	#The first line of text under the app name
+	description = "Playing on %realmname%"
+	#The second line of text under the app name
+	state = "Playing on a Realm"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "mclogonew"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%realmdescription%"
+	#The buttons to display on Discord
+	buttons = []
+
+#Fallback event for disabled events
+[generic]
+	#The first line of text under the app name
+	description = "Surviving in Nalova city."
+	#The second line of text under the app name
+	state = "Fighting zombies."
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "titleimage"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Dawn of The Dead"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Minecraft 1.12.2"
+	#The buttons to display on Discord
+	[[generic.buttons]]
+		label = "Modpack Page"
+		url = "https://www.curseforge.com/minecraft/modpacks/dawn-of-the-dead"
+
+	[[generic.buttons]]
+		label = "Modpack Trailer: (Placeholder)"
+		url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
+#Dimension Information Overrides
+[dimension_overrides]
+	#Allows you to override the displayed values for dimensions
+	enabled = false
+
+	#The Dimensions to override
+	[[dimension_overrides.dimensions]]
+		name = "overworld"
+		description = "%player% is fighting zombies."
+		state = ""
+		largeImageKey = "overworld"
+		largeImageText = "In the Overworld"
+		smallImageKey = "mclogo"
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_nether"
+		description = "%player% is in The Nether"
+		state = ""
+		largeImageKey = "nether"
+		largeImageText = "In the Nether"
+		smallImageKey = "mclogo"
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_end"
+		description = "%player% is in The End"
+		state = ""
+		largeImageKey = "end"
+		largeImageText = "In the End"
+		smallImageKey = "mclogo"
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
