@@ -1,0 +1,1 @@
+You have %s attempts left before zombies overrun the city

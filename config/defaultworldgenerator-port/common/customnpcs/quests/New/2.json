@@ -1,0 +1,56 @@
+{
+    "ModRev": 18,
+    "Type": 0,
+    "Title": "Test 2",
+    "Text": "Testin a second quest",
+    "CompleteText": "Testing a second quest",
+    "CompleterNpc": "Dwystl",
+    "NextQuestId": -1,
+    "NextQuestTitle": "",
+    "RewardExp": 100,
+    "Rewards": {
+        "NpcMiscInv": [
+        ]
+    },
+    "QuestCommand": "",
+    "RandomReward": 0b,
+    "QuestCompletion": 0,
+    "QuestRepeat": 0,
+    "Items": {
+        "NpcMiscInv": [
+            {
+                "Slot": 0b,
+                "id": "minecraft:crafting_table",
+                "Count": 1b,
+                "Damage": 0s,
+                "ForgeCaps": {
+                    "customnpcs:itemscripteddata": {
+                    }
+                }
+            }
+        ]
+    },
+    "LeaveItems": 0b,
+    "IgnoreDamage": 0b,
+    "IgnoreNBT": 0b,
+    "QuestFactionPoints": {
+        "OptionFactions1": -1,
+        "OptionFactions2": -1,
+        "OptionFaction1Points": 100,
+        "OptionFaction2Points": 100,
+        "DecreaseFaction1Points": 0b,
+        "DecreaseFaction2Points": 0b
+    },
+    "QuestMail": {
+        "Subject": "",
+        "Sender": "",
+        "Time": 0L,
+        "BeenRead": 0b,
+        "Message": {
+        },
+        "TimePast": 1668911126199L,
+        "MailQuest": -1,
+        "MailItems": [
+        ]
+    }
+}

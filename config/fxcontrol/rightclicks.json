@@ -1,0 +1,7 @@
+[
+	{
+    "playerhelditem": "minecraft:experience_bottle",
+    "message": "You shatter the coin jar",
+    "result": "deny"
+ 	}
+]

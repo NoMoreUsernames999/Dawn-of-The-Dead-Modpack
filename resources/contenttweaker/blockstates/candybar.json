@@ -1,0 +1,18 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+   "textures": {
+		"0": "contenttweaker:blocks/texture_base",
+		"1": "contenttweaker:blocks/base_edge1",
+		"2": "contenttweaker:blocks/e2",
+		"particle": "contenttweaker:blocks/e2"
+	},
+    "model": "contenttweaker:candybar",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

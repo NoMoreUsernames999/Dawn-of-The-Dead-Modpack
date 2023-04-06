@@ -1,0 +1,11 @@
+[
+	{
+		"mob": "minecraft:zombie",
+		"result": "allow"
+	},
+
+	{
+		"mob": "hostile",
+		"result": "deny"
+	}
+]
