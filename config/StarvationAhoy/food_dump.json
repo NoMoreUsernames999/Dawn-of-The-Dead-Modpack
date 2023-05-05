@@ -171,576 +171,6 @@
       ]
     },
     {
-      "mod": "aquaculture",
-      "foods": [
-        {
-          "name": "food",
-          "hunger": 1,
-          "saturation": 0.0
-        }
-      ]
-    },
-    {
-      "mod": "xlfoodmod",
-      "foods": [
-        {
-          "name": "rice",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "butter_rice",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "fried_rice",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "pepper",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "raw_corn",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "corn",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "cucumber",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "lettuce",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "onion",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "tomato",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "strawberry",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "salt",
-          "hunger": 0,
-          "saturation": 0.1
-        },
-        {
-          "name": "dough",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "cooked_dough",
-          "hunger": 1,
-          "saturation": 0.6
-        },
-        {
-          "name": "crouton",
-          "hunger": 0,
-          "saturation": 0.6
-        },
-        {
-          "name": "butter",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "cheese",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "cheese_puff",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "chips",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "salty_chips",
-          "hunger": 0,
-          "saturation": 0.6
-        },
-        {
-          "name": "spicy_chips",
-          "hunger": 0,
-          "saturation": 0.6
-        },
-        {
-          "name": "onion_rings",
-          "hunger": 1,
-          "saturation": 0.6
-        },
-        {
-          "name": "cheesy_bread",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "potato_bread",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "corn_bread",
-          "hunger": 4,
-          "saturation": 0.3
-        },
-        {
-          "name": "rice_bread",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "baguette",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "fried_egg",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "pancake",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "waffle",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "macaroni_and_cheese",
-          "hunger": 4,
-          "saturation": 0.3
-        },
-        {
-          "name": "spaghetti",
-          "hunger": 4,
-          "saturation": 0.3
-        },
-        {
-          "name": "enchilada",
-          "hunger": 4,
-          "saturation": 0.3
-        },
-        {
-          "name": "lasagne",
-          "hunger": 6,
-          "saturation": 0.3
-        },
-        {
-          "name": "jambon_beurre",
-          "hunger": 7,
-          "saturation": 0.2
-        },
-        {
-          "name": "flesh",
-          "hunger": 2,
-          "saturation": 0.1
-        },
-        {
-          "name": "ham",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "sausage",
-          "hunger": 1,
-          "saturation": 0.6
-        },
-        {
-          "name": "bacon",
-          "hunger": 1,
-          "saturation": 0.6
-        },
-        {
-          "name": "beef_jerky",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "ground_beef",
-          "hunger": 2,
-          "saturation": 0.6
-        },
-        {
-          "name": "raw_chicken_wing",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "cooked_chicken_wing",
-          "hunger": 2,
-          "saturation": 0.6
-        },
-        {
-          "name": "spicy_chicken_wing",
-          "hunger": 2,
-          "saturation": 0.7
-        },
-        {
-          "name": "bucket_of_fried_chicken",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "top_bun",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "bottom_bun",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "hamburger",
-          "hunger": 4,
-          "saturation": 0.3
-        },
-        {
-          "name": "chickenburger",
-          "hunger": 4,
-          "saturation": 0.3
-        },
-        {
-          "name": "cheeseburger",
-          "hunger": 5,
-          "saturation": 0.3
-        },
-        {
-          "name": "hot_dog",
-          "hunger": 4,
-          "saturation": 0.3
-        },
-        {
-          "name": "sausage_roll",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "slice_of_pizza",
-          "hunger": 4,
-          "saturation": 0.1
-        },
-        {
-          "name": "tortilla",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "taco",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "burrito",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "kebab",
-          "hunger": 6,
-          "saturation": 0.2
-        },
-        {
-          "name": "chicken_sandwich",
-          "hunger": 5,
-          "saturation": 0.3
-        },
-        {
-          "name": "blt_sandwich",
-          "hunger": 6,
-          "saturation": 0.2
-        },
-        {
-          "name": "breakfast_sandwich",
-          "hunger": 4,
-          "saturation": 0.3
-        },
-        {
-          "name": "grilled_cheese_sandwich",
-          "hunger": 5,
-          "saturation": 0.2
-        },
-        {
-          "name": "icecream_sandwich",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "garden_salad",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "chicken_salad",
-          "hunger": 4,
-          "saturation": 0.3
-        },
-        {
-          "name": "caesar_salad",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "onion_salad",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "taco_salad",
-          "hunger": 5,
-          "saturation": 0.3
-        },
-        {
-          "name": "cucumber_soup",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "tomato_soup",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "vegetable_soup",
-          "hunger": 4,
-          "saturation": 0.3
-        },
-        {
-          "name": "chicken_soup",
-          "hunger": 5,
-          "saturation": 0.3
-        },
-        {
-          "name": "beef_stew",
-          "hunger": 6,
-          "saturation": 0.3
-        },
-        {
-          "name": "pumpkin_stew",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "caramel_apple",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "marshmallow",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "roasted_marshmallow",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "oreo_cookie",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "twinkie",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "brownie",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "bourbon_biscuit",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "chocolate",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "icecream_cone",
-          "hunger": 1,
-          "saturation": 0.6
-        },
-        {
-          "name": "chocolate_icecream",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "vanilla_icecream",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "strawberry_icecream",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "crescent_roll",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "donut",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "sugar_donut",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "chocolate_donut",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "vanilla_donut",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "vanilla_cupcake",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "chocolate_cupcake",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "oreo_cupcake",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "strawberry_cupcake",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "apple_pie",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "golden_apple_pie",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "cheese_pie",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "chicken_pot_pie",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "chocolate_pie",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "bacon_pie",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "fish_pie",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "strawberry_pie",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "speedy_energy_drink",
-          "hunger": 0,
-          "saturation": 0.0
-        },
-        {
-          "name": "healthy_energy_drink",
-          "hunger": 0,
-          "saturation": 0.0
-        },
-        {
-          "name": "stealthy_energy_drink",
-          "hunger": 0,
-          "saturation": 0.0
-        },
-        {
-          "name": "strong_energy_drink",
-          "hunger": 0,
-          "saturation": 0.0
-        },
-        {
-          "name": "deadly_energy_drink",
-          "hunger": 0,
-          "saturation": 0.0
-        },
-        {
-          "name": "super_energy_drink",
-          "hunger": 0,
-          "saturation": 0.0
-        },
-        {
-          "name": "beer",
-          "hunger": 0,
-          "saturation": 0.1
-        },
-        {
-          "name": "coffee",
-          "hunger": 0,
-          "saturation": 0.1
-        },
-        {
-          "name": "cappuccino",
-          "hunger": 1,
-          "saturation": 0.1
-        }
-      ]
-    },
-    {
       "mod": "betteranimalsplus",
       "foods": [
         {
@@ -807,6 +237,106 @@
           "name": "fried_egg",
           "hunger": 2,
           "saturation": 0.75
+        }
+      ]
+    },
+    {
+      "mod": "creatures",
+      "foods": [
+        {
+          "name": "raw_koi",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "roasted_koi",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "raw_shrimp",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "cooked_shrimp",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "raw_pike",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "cooked_pike",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "raw_arowana",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "raw_gourami",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "cooked_arowana",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "raw_large_wild_bird_meat",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "roasted_large_wild_bird_meat",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "raw_small_wild_bird_meat",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "roasted_small_wild_bird_meat",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "item_goldfish",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "creatures_nectar",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "item_trout",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "cooked_trout",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "raw_red_snapper",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "cooked_red_snapper",
+          "hunger": 3,
+          "saturation": 0.3
         }
       ]
     },
@@ -1526,6 +1056,611 @@
       ]
     },
     {
+      "mod": "foodfunk",
+      "foods": [
+        {
+          "name": "rotten_food",
+          "hunger": 0,
+          "saturation": 0.05
+        }
+      ]
+    },
+    {
+      "mod": "fishingmadebetter",
+      "foods": [
+        {
+          "name": "fish_slice_raw",
+          "hunger": 1,
+          "saturation": 0.05
+        },
+        {
+          "name": "fish_slice_cooked",
+          "hunger": 3,
+          "saturation": 0.4
+        }
+      ]
+    },
+    {
+      "mod": "aquaculture",
+      "foods": [
+        {
+          "name": "food",
+          "hunger": 1,
+          "saturation": 0.0
+        }
+      ]
+    },
+    {
+      "mod": "xlfoodmod",
+      "foods": [
+        {
+          "name": "rice",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "butter_rice",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "fried_rice",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "pepper",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "raw_corn",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "corn",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "cucumber",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "lettuce",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "onion",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "tomato",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "strawberry",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "salt",
+          "hunger": 0,
+          "saturation": 0.1
+        },
+        {
+          "name": "dough",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "cooked_dough",
+          "hunger": 1,
+          "saturation": 0.6
+        },
+        {
+          "name": "crouton",
+          "hunger": 0,
+          "saturation": 0.6
+        },
+        {
+          "name": "butter",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "cheese",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "cheese_puff",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "chips",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "salty_chips",
+          "hunger": 0,
+          "saturation": 0.6
+        },
+        {
+          "name": "spicy_chips",
+          "hunger": 0,
+          "saturation": 0.6
+        },
+        {
+          "name": "onion_rings",
+          "hunger": 1,
+          "saturation": 0.6
+        },
+        {
+          "name": "cheesy_bread",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "potato_bread",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "corn_bread",
+          "hunger": 4,
+          "saturation": 0.3
+        },
+        {
+          "name": "rice_bread",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "baguette",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "fried_egg",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "pancake",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "waffle",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "macaroni_and_cheese",
+          "hunger": 4,
+          "saturation": 0.3
+        },
+        {
+          "name": "spaghetti",
+          "hunger": 4,
+          "saturation": 0.3
+        },
+        {
+          "name": "enchilada",
+          "hunger": 4,
+          "saturation": 0.3
+        },
+        {
+          "name": "lasagne",
+          "hunger": 6,
+          "saturation": 0.3
+        },
+        {
+          "name": "jambon_beurre",
+          "hunger": 7,
+          "saturation": 0.2
+        },
+        {
+          "name": "flesh",
+          "hunger": 2,
+          "saturation": 0.1
+        },
+        {
+          "name": "ham",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "sausage",
+          "hunger": 1,
+          "saturation": 0.6
+        },
+        {
+          "name": "bacon",
+          "hunger": 1,
+          "saturation": 0.6
+        },
+        {
+          "name": "beef_jerky",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "ground_beef",
+          "hunger": 2,
+          "saturation": 0.6
+        },
+        {
+          "name": "raw_chicken_wing",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "cooked_chicken_wing",
+          "hunger": 2,
+          "saturation": 0.6
+        },
+        {
+          "name": "spicy_chicken_wing",
+          "hunger": 2,
+          "saturation": 0.7
+        },
+        {
+          "name": "bucket_of_fried_chicken",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "top_bun",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "bottom_bun",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "hamburger",
+          "hunger": 4,
+          "saturation": 0.3
+        },
+        {
+          "name": "chickenburger",
+          "hunger": 4,
+          "saturation": 0.3
+        },
+        {
+          "name": "cheeseburger",
+          "hunger": 5,
+          "saturation": 0.3
+        },
+        {
+          "name": "hot_dog",
+          "hunger": 4,
+          "saturation": 0.3
+        },
+        {
+          "name": "sausage_roll",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "slice_of_pizza",
+          "hunger": 4,
+          "saturation": 0.1
+        },
+        {
+          "name": "tortilla",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "taco",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "burrito",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "kebab",
+          "hunger": 6,
+          "saturation": 0.2
+        },
+        {
+          "name": "chicken_sandwich",
+          "hunger": 5,
+          "saturation": 0.3
+        },
+        {
+          "name": "blt_sandwich",
+          "hunger": 6,
+          "saturation": 0.2
+        },
+        {
+          "name": "breakfast_sandwich",
+          "hunger": 4,
+          "saturation": 0.3
+        },
+        {
+          "name": "grilled_cheese_sandwich",
+          "hunger": 5,
+          "saturation": 0.2
+        },
+        {
+          "name": "icecream_sandwich",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "garden_salad",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "chicken_salad",
+          "hunger": 4,
+          "saturation": 0.3
+        },
+        {
+          "name": "caesar_salad",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "onion_salad",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "taco_salad",
+          "hunger": 5,
+          "saturation": 0.3
+        },
+        {
+          "name": "cucumber_soup",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "tomato_soup",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "vegetable_soup",
+          "hunger": 4,
+          "saturation": 0.3
+        },
+        {
+          "name": "chicken_soup",
+          "hunger": 5,
+          "saturation": 0.3
+        },
+        {
+          "name": "beef_stew",
+          "hunger": 6,
+          "saturation": 0.3
+        },
+        {
+          "name": "pumpkin_stew",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "caramel_apple",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "marshmallow",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "roasted_marshmallow",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "oreo_cookie",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "twinkie",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "brownie",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "bourbon_biscuit",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "chocolate",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "icecream_cone",
+          "hunger": 1,
+          "saturation": 0.6
+        },
+        {
+          "name": "chocolate_icecream",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "vanilla_icecream",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "strawberry_icecream",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "crescent_roll",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "donut",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "sugar_donut",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "chocolate_donut",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "vanilla_donut",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "vanilla_cupcake",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "chocolate_cupcake",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "oreo_cupcake",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "strawberry_cupcake",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "apple_pie",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "golden_apple_pie",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "cheese_pie",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "chicken_pot_pie",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "chocolate_pie",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "bacon_pie",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "fish_pie",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "strawberry_pie",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "speedy_energy_drink",
+          "hunger": 0,
+          "saturation": 0.0
+        },
+        {
+          "name": "healthy_energy_drink",
+          "hunger": 0,
+          "saturation": 0.0
+        },
+        {
+          "name": "stealthy_energy_drink",
+          "hunger": 0,
+          "saturation": 0.0
+        },
+        {
+          "name": "strong_energy_drink",
+          "hunger": 0,
+          "saturation": 0.0
+        },
+        {
+          "name": "deadly_energy_drink",
+          "hunger": 0,
+          "saturation": 0.0
+        },
+        {
+          "name": "super_energy_drink",
+          "hunger": 0,
+          "saturation": 0.0
+        },
+        {
+          "name": "beer",
+          "hunger": 0,
+          "saturation": 0.1
+        },
+        {
+          "name": "coffee",
+          "hunger": 0,
+          "saturation": 0.1
+        },
+        {
+          "name": "cappuccino",
+          "hunger": 1,
+          "saturation": 0.1
+        }
+      ]
+    },
+    {
+      "mod": "subaquatic",
+      "foods": [
+        {
+          "name": "dried_kelp",
+          "hunger": 0,
+          "saturation": 0.3
+        }
+      ]
+    },
+    {
       "mod": "of",
       "foods": [
         {
@@ -1692,111 +1827,6 @@
           "name": "bonestew",
           "hunger": 3,
           "saturation": 0.3
-        }
-      ]
-    },
-    {
-      "mod": "wastelandgrocers",
-      "foods": [
-        {
-          "name": "open_canned_melon",
-          "hunger": 2,
-          "saturation": 0.15
-        },
-        {
-          "name": "open_canned_apple",
-          "hunger": 2,
-          "saturation": 0.15
-        },
-        {
-          "name": "open_canned_pork",
-          "hunger": 2,
-          "saturation": 1.1
-        },
-        {
-          "name": "open_canned_chicken",
-          "hunger": 2,
-          "saturation": 0.9
-        },
-        {
-          "name": "open_canned_beef",
-          "hunger": 3,
-          "saturation": 1.1
-        },
-        {
-          "name": "open_canned_carrot",
-          "hunger": 1,
-          "saturation": 0.15
-        },
-        {
-          "name": "open_canned_potato",
-          "hunger": 1,
-          "saturation": 0.15
-        },
-        {
-          "name": "open_canned_salmon",
-          "hunger": 2,
-          "saturation": 1.1
-        },
-        {
-          "name": "open_canned_cod",
-          "hunger": 2,
-          "saturation": 0.9
-        },
-        {
-          "name": "open_canned_mushroom_stew",
-          "hunger": 4,
-          "saturation": 1.5
-        },
-        {
-          "name": "open_canned_rabbit_stew",
-          "hunger": 6,
-          "saturation": 2.5
-        },
-        {
-          "name": "vinegar_chips",
-          "hunger": 1,
-          "saturation": 0.05
-        },
-        {
-          "name": "spicy_chips",
-          "hunger": 1,
-          "saturation": 0.05
-        },
-        {
-          "name": "salty_chips",
-          "hunger": 1,
-          "saturation": 0.05
-        },
-        {
-          "name": "tortilla_chips",
-          "hunger": 1,
-          "saturation": 0.05
-        }
-      ]
-    },
-    {
-      "mod": "foodfunk",
-      "foods": [
-        {
-          "name": "rotten_food",
-          "hunger": 0,
-          "saturation": 0.05
-        }
-      ]
-    },
-    {
-      "mod": "fishingmadebetter",
-      "foods": [
-        {
-          "name": "fish_slice_raw",
-          "hunger": 1,
-          "saturation": 0.05
-        },
-        {
-          "name": "fish_slice_cooked",
-          "hunger": 3,
-          "saturation": 0.4
         }
       ]
     }
