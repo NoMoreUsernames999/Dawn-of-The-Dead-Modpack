@@ -156,6 +156,221 @@
       ]
     },
     {
+      "mod": "better_diving",
+      "foods": [
+        {
+          "name": "peeper",
+          "hunger": 0,
+          "saturation": 0.25
+        },
+        {
+          "name": "peeper_cooked",
+          "hunger": 1,
+          "saturation": 0.25
+        },
+        {
+          "name": "peeper_cured",
+          "hunger": 2,
+          "saturation": 0.25
+        },
+        {
+          "name": "bladderfish",
+          "hunger": 0,
+          "saturation": 0.25
+        },
+        {
+          "name": "bladderfish_cooked",
+          "hunger": 1,
+          "saturation": 0.25
+        },
+        {
+          "name": "bladderfish_cured",
+          "hunger": 2,
+          "saturation": 0.25
+        },
+        {
+          "name": "garryfish",
+          "hunger": 0,
+          "saturation": 0.25
+        },
+        {
+          "name": "garryfish_cooked",
+          "hunger": 1,
+          "saturation": 0.25
+        },
+        {
+          "name": "garryfish_cured",
+          "hunger": 2,
+          "saturation": 0.25
+        },
+        {
+          "name": "holefish",
+          "hunger": 0,
+          "saturation": 0.25
+        },
+        {
+          "name": "holefish_cooked",
+          "hunger": 1,
+          "saturation": 0.25
+        },
+        {
+          "name": "holefish_cured",
+          "hunger": 2,
+          "saturation": 0.25
+        },
+        {
+          "name": "boomerang",
+          "hunger": 0,
+          "saturation": 0.25
+        },
+        {
+          "name": "boomerang_cooked",
+          "hunger": 1,
+          "saturation": 0.25
+        },
+        {
+          "name": "boomerang_cured",
+          "hunger": 2,
+          "saturation": 0.25
+        }
+      ]
+    },
+    {
+      "mod": "exsartagine",
+      "foods": [
+        {
+          "name": "boiled_egg",
+          "hunger": 2,
+          "saturation": 0.25
+        },
+        {
+          "name": "boiled_beans",
+          "hunger": 1,
+          "saturation": 0.1
+        },
+        {
+          "name": "boiled_potato",
+          "hunger": 3,
+          "saturation": 0.25
+        },
+        {
+          "name": "pizza_plain",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "pizza_meat",
+          "hunger": 6,
+          "saturation": 0.45
+        },
+        {
+          "name": "pizza_chicken",
+          "hunger": 5,
+          "saturation": 0.45
+        },
+        {
+          "name": "pizza_fish",
+          "hunger": 4,
+          "saturation": 0.5
+        },
+        {
+          "name": "pizza_sweet",
+          "hunger": 5,
+          "saturation": 0.35
+        },
+        {
+          "name": "pizza_meat_raw",
+          "hunger": 2,
+          "saturation": 0.15
+        },
+        {
+          "name": "pizza_chicken_raw",
+          "hunger": 1,
+          "saturation": 0.15
+        },
+        {
+          "name": "pizza_fish_raw",
+          "hunger": 1,
+          "saturation": 0.2
+        },
+        {
+          "name": "pizza_sweet_raw",
+          "hunger": 1,
+          "saturation": 0.1
+        },
+        {
+          "name": "fine_bread",
+          "hunger": 2,
+          "saturation": 0.4
+        },
+        {
+          "name": "bread_meat",
+          "hunger": 2,
+          "saturation": 0.225
+        },
+        {
+          "name": "veggie_bread",
+          "hunger": 4,
+          "saturation": 0.45
+        },
+        {
+          "name": "bread_meat_raw",
+          "hunger": 1,
+          "saturation": 0.15
+        },
+        {
+          "name": "veggie_bread_raw",
+          "hunger": 1,
+          "saturation": 0.15
+        },
+        {
+          "name": "spaghetti_cooked",
+          "hunger": 1,
+          "saturation": 0.35
+        },
+        {
+          "name": "spaghetti_sauced",
+          "hunger": 2,
+          "saturation": 0.25
+        },
+        {
+          "name": "spaghetti_bolognaise",
+          "hunger": 2,
+          "saturation": 0.35
+        },
+        {
+          "name": "spaghetti_cheese",
+          "hunger": 2,
+          "saturation": 0.4
+        },
+        {
+          "name": "spaghetti_veggie",
+          "hunger": 4,
+          "saturation": 0.25
+        },
+        {
+          "name": "noodles_chicken_cooked",
+          "hunger": 3,
+          "saturation": 0.35
+        },
+        {
+          "name": "noodles_fish_cooked",
+          "hunger": 3,
+          "saturation": 0.35
+        },
+        {
+          "name": "noodles_meat_cooked",
+          "hunger": 2,
+          "saturation": 0.4
+        },
+        {
+          "name": "noodles_veggie_cooked",
+          "hunger": 3,
+          "saturation": 0.35
+        }
+      ]
+    },
+    {
       "mod": "flansmod",
       "foods": [
         {
@@ -237,106 +452,6 @@
           "name": "fried_egg",
           "hunger": 2,
           "saturation": 0.75
-        }
-      ]
-    },
-    {
-      "mod": "creatures",
-      "foods": [
-        {
-          "name": "raw_koi",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "roasted_koi",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "raw_shrimp",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "cooked_shrimp",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "raw_pike",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "cooked_pike",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "raw_arowana",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "raw_gourami",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "cooked_arowana",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "raw_large_wild_bird_meat",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "roasted_large_wild_bird_meat",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "raw_small_wild_bird_meat",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "roasted_small_wild_bird_meat",
-          "hunger": 2,
-          "saturation": 0.3
-        },
-        {
-          "name": "item_goldfish",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "creatures_nectar",
-          "hunger": 0,
-          "saturation": 0.3
-        },
-        {
-          "name": "item_trout",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "cooked_trout",
-          "hunger": 3,
-          "saturation": 0.3
-        },
-        {
-          "name": "raw_red_snapper",
-          "hunger": 1,
-          "saturation": 0.3
-        },
-        {
-          "name": "cooked_red_snapper",
-          "hunger": 3,
-          "saturation": 0.3
         }
       ]
     },
@@ -1056,12 +1171,217 @@
       ]
     },
     {
+      "mod": "zawa",
+      "foods": [
+        {
+          "name": "rat_raw",
+          "hunger": 0,
+          "saturation": 0.2
+        },
+        {
+          "name": "rat_cooked",
+          "hunger": 1,
+          "saturation": 0.45
+        },
+        {
+          "name": "carnivore_meat_raw",
+          "hunger": 1,
+          "saturation": 0.2
+        },
+        {
+          "name": "carnivore_meat_cooked",
+          "hunger": 3,
+          "saturation": 0.45
+        },
+        {
+          "name": "large_meat_raw",
+          "hunger": 1,
+          "saturation": 0.2
+        },
+        {
+          "name": "large_meat_cooked",
+          "hunger": 4,
+          "saturation": 0.45
+        },
+        {
+          "name": "cetacean_meat_raw",
+          "hunger": 1,
+          "saturation": 0.2
+        },
+        {
+          "name": "cetacean_meat_cooked",
+          "hunger": 3,
+          "saturation": 0.45
+        },
+        {
+          "name": "bush_meat_raw",
+          "hunger": 1,
+          "saturation": 0.2
+        },
+        {
+          "name": "bush_meat_cooked",
+          "hunger": 2,
+          "saturation": 0.45
+        },
+        {
+          "name": "bird_meat",
+          "hunger": 0,
+          "saturation": 0.2
+        },
+        {
+          "name": "bird_meat_cooked",
+          "hunger": 1,
+          "saturation": 0.45
+        },
+        {
+          "name": "reptile_meat_raw",
+          "hunger": 1,
+          "saturation": 0.2
+        },
+        {
+          "name": "reptile_meat_cooked",
+          "hunger": 2,
+          "saturation": 0.45
+        },
+        {
+          "name": "raw_frog_leg",
+          "hunger": 1,
+          "saturation": 0.2
+        },
+        {
+          "name": "cooked_frog_leg",
+          "hunger": 2,
+          "saturation": 0.45
+        },
+        {
+          "name": "raw_cichlid",
+          "hunger": 1,
+          "saturation": 0.1
+        },
+        {
+          "name": "cooked_cichlid",
+          "hunger": 2,
+          "saturation": 0.25
+        },
+        {
+          "name": "raw_crab_leg",
+          "hunger": 1,
+          "saturation": 0.1
+        },
+        {
+          "name": "cooked_crab_leg",
+          "hunger": 2,
+          "saturation": 0.25
+        }
+      ]
+    },
+    {
       "mod": "foodfunk",
       "foods": [
         {
           "name": "rotten_food",
           "hunger": 0,
           "saturation": 0.05
+        }
+      ]
+    },
+    {
+      "mod": "pyrotech",
+      "foods": [
+        {
+          "name": "apple_baked",
+          "hunger": 3,
+          "saturation": 0.225
+        },
+        {
+          "name": "carrot_roasted",
+          "hunger": 2,
+          "saturation": 0.45
+        },
+        {
+          "name": "egg_roasted",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "mushroom_brown_roasted",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "mushroom_red_roasted",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "beetroot_roasted",
+          "hunger": 1,
+          "saturation": 0.45
+        },
+        {
+          "name": "burned_food",
+          "hunger": 1,
+          "saturation": 0.05
+        },
+        {
+          "name": "strange_tuber",
+          "hunger": 1,
+          "saturation": 0.1
+        },
+        {
+          "name": "pyroberry_wine",
+          "hunger": 0,
+          "saturation": 0.05
+        },
+        {
+          "name": "gloamberry_wine",
+          "hunger": 0,
+          "saturation": 0.05
+        },
+        {
+          "name": "freckleberry_wine",
+          "hunger": 0,
+          "saturation": 0.05
+        },
+        {
+          "name": "tainted_meat",
+          "hunger": 0,
+          "saturation": 0.025
+        },
+        {
+          "name": "pyroberries",
+          "hunger": 1,
+          "saturation": 0.05
+        },
+        {
+          "name": "gloamberries",
+          "hunger": 1,
+          "saturation": 0.05
+        },
+        {
+          "name": "freckleberries",
+          "hunger": 1,
+          "saturation": 0.05
+        },
+        {
+          "name": "marshmallow",
+          "hunger": 0,
+          "saturation": 0.025
+        },
+        {
+          "name": "marshmallow_roasted",
+          "hunger": 1,
+          "saturation": 0.05
+        },
+        {
+          "name": "marshmallow_stick",
+          "hunger": 1,
+          "saturation": 0.05
+        },
+        {
+          "name": "marshmallow_burned",
+          "hunger": 0,
+          "saturation": 0.005
         }
       ]
     },
@@ -1077,6 +1397,146 @@
           "name": "fish_slice_cooked",
           "hunger": 3,
           "saturation": 0.4
+        }
+      ]
+    },
+    {
+      "mod": "nifty",
+      "foods": [
+        {
+          "name": "waffle",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "cheese",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "cheesebread",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "chocolatebar",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "pickle",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "taco",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "burrito",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "applepie",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "doughnut",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "hotdog",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "blueberrypie",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "bacon_raw",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "bacon_cooked",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "orange",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "pear",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "tomato",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "banana",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "blueberry",
+          "hunger": 0,
+          "saturation": 0.3
+        },
+        {
+          "name": "icecream",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "cone",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "fries",
+          "hunger": 2,
+          "saturation": 0.3
+        },
+        {
+          "name": "fried_chicken",
+          "hunger": 4,
+          "saturation": 0.3
+        },
+        {
+          "name": "fish_sticks",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "beans",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "burger",
+          "hunger": 3,
+          "saturation": 0.3
+        },
+        {
+          "name": "dogfood",
+          "hunger": 1,
+          "saturation": 0.3
+        },
+        {
+          "name": "aloevera",
+          "hunger": 0,
+          "saturation": 0.3
         }
       ]
     },
