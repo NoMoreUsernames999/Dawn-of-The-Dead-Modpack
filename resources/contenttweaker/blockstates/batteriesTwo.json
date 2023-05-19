@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+   "textures": {
+		"0": "contenttweaker:blocks/batterytexturetwo",
+		"particle": "contenttweaker:blocks/batterytexturetwo"
+	},
+    "model": "contenttweaker:BatteryPile",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}
