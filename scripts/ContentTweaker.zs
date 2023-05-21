@@ -44,3 +44,63 @@ candyBar.setFullBlock(false);
 candyBar.setPassable(true);
 candyBar.setBlockLayer("CUTOUT");
 candyBar.register();
+
+var batteries = VanillaFactory.createBlock("batteries", <blockmaterial:Cake>);
+batteries.axisAlignedBB = AxisAlignedBB.create(
+     0.0 / 16.0,
+     0.0 / 16.0,
+     0.0 / 16.0,
+	16.0 / 16.0,
+    0.1 / 16.0,
+    16.0 / 16.0
+	);
+batteries.setLightOpacity(0);
+batteries.setBlockHardness(1.0);
+batteries.setBlockResistance(1.0);
+batteries.setBlockSoundType(<soundtype:ground>);
+batteries.setCreativeTab(<creativetab:dotdblocks>);
+batteries.setEntitySpawnable(false);
+batteries.setFullBlock(false);
+batteries.setPassable(true);
+batteries.setBlockLayer("CUTOUT");
+batteries.register();
+
+var batteriesTwo = VanillaFactory.createBlock("batteriesTwo", <blockmaterial:Cake>);
+batteriesTwo.axisAlignedBB = AxisAlignedBB.create(
+     0.0 / 16.0,
+     0.0 / 16.0,
+     0.0 / 16.0,
+	16.0 / 16.0,
+    0.1 / 16.0,
+    16.0 / 16.0
+	);
+batteriesTwo.setLightOpacity(0);
+batteriesTwo.setBlockHardness(1.0);
+batteriesTwo.setBlockResistance(1.0);
+batteriesTwo.setBlockSoundType(<soundtype:ground>);
+batteriesTwo.setCreativeTab(<creativetab:dotdblocks>);
+batteriesTwo.setEntitySpawnable(false);
+batteriesTwo.setFullBlock(false);
+batteriesTwo.setPassable(true);
+batteriesTwo.setBlockLayer("CUTOUT");
+batteriesTwo.register();
+
+var paperGarbage = VanillaFactory.createBlock("paperGarbage", <blockmaterial:Cake>);
+paperGarbage.axisAlignedBB = AxisAlignedBB.create(
+     0.0 / 16.0,
+     0.0 / 16.0,
+     0.0 / 16.0,
+	16.0 / 16.0,
+    0.1 / 16.0,
+    16.0 / 16.0
+	);
+paperGarbage.setLightOpacity(0);
+paperGarbage.setBlockHardness(1.0);
+paperGarbage.setBlockResistance(1.0);
+paperGarbage.setBlockSoundType(<soundtype:ground>);
+paperGarbage.setCreativeTab(<creativetab:dotdblocks>);
+paperGarbage.setEntitySpawnable(false);
+paperGarbage.setFullBlock(false);
+paperGarbage.setPassable(true);
+paperGarbage.setBlockLayer("CUTOUT");
+paperGarbage.register();

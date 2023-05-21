@@ -121,22 +121,6 @@ recipes.remove(<fishingmadebetter:hook_magnetic>);
 print("Fishing made better removals complete"); 
 
 
-//========================================Wastelandgrocers:========================================
-
-
-print("wastelandgrocers removals starting!"); 
-
-recipes.remove(<wastelandgrocers:needle>);
-recipes.remove(<wastelandgrocers:can_opener>);
-recipes.remove(<wastelandgrocers:med_bandaid>);
-recipes.remove(<wastelandgrocers:med_bandage_wrap>);
-recipes.remove(<wastelandgrocers:med_first_aid>);
-recipes.remove(<wastelandgrocers:med_trauma_kit>);
-
-
-print("wastelandgrocers removals complete"); 
-
-
 //========================================Project Vibrant Journeys:========================================
 
 
