@@ -77,3 +77,8 @@ patchouli_data.json
 /config/fancymenu/locals/*.local
 /config/codechicken/
 /*.log
+/config/pyrotech/core.compat.Ore-Generated.json
+/config/pyrotech/core.compat.Wood-Generated.json
+/config/pyrotech/module.tech.Bloomery.Slag-Generated.json
+/config/StarvationAhoy/food_dump.json
+/local/ftbutilities/backups.json
