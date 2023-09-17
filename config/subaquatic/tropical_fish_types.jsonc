@@ -43,9 +43,9 @@
     },
     {
         //sunstreak
-        "primaryShape":1,
-        "primaryColor":"gray",
-        "secondaryShape":0,
+        "primaryShape":0,
+        "primaryColor":"blue",
+        "secondaryShape":1,
         "secondaryColor":"gray"
     },
     {

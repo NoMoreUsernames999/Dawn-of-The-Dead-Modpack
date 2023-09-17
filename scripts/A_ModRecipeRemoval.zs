@@ -230,7 +230,6 @@ recipes.removeByMod("qualitytools");
 recipes.removeByMod("of");
 recipes.removeByMod("gaspunk");
 recipes.removeByMod("air_support");
-recipes.removeByMod("mod_lavacow");
 recipes.removeByMod("floodlights");
 
 print("Misc removals complete!"); 
