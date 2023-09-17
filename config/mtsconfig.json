@@ -217,26 +217,33 @@
       }
     },
     "lastLoadedFluids": {
-      "waste": "Waste Water",
-      "brine_netjry": "Brine",
+      "concrete": "Liquid Concrete",
       "wood_tar": "Wood Tar",
       "gloamberry_wine": "Gloamberry Wine",
-      "bitumen": "Bitumen",
-      "smoke": "Smoke",
       "pyroberry_wine": "Pyroberry Wine",
       "paraffin": "Paraffin",
       "ovis_atre_milk": "Ovis Atre Milk",
+      "ethanol": "Ethanol",
+      "lava": "Lava",
+      "urushi": "Urushi",
+      "steam": "Steam",
+      "magma_basaltic": "Basaltic Magma",
+      "bitumen_boiling": "Boiling Bitumen",
+      "betterquesting.placeholder": "Placeholder",
+      "biodiesel": "Biodiesel",
+      "creosote": "Creosote Oil",
+      "waste": "Waste Water",
+      "potion": "Potion",
+      "brine_netjry": "Brine",
+      "bitumen": "Bitumen",
+      "plantoil": "Plant Oil",
+      "smoke": "Smoke",
       "water": "Water",
       "tannin": "Tannin",
       "liquid_clay": "Liquid Clay",
       "coal_tar": "Coal Tar",
-      "lava": "Lava",
       "freckleberry_wine": "Freckleberry Wine",
-      "urushi": "Urushi",
-      "lamp_oil": "Lamp Oil",
-      "steam": "Steam",
-      "magma_basaltic": "Basaltic Magma",
-      "bitumen_boiling": "Boiling Bitumen"
+      "lamp_oil": "Lamp Oil"
     }
   }
 }

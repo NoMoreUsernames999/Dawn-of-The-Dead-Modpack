@@ -104,3 +104,23 @@ paperGarbage.setFullBlock(false);
 paperGarbage.setPassable(true);
 paperGarbage.setBlockLayer("CUTOUT");
 paperGarbage.register();
+
+var rawExplosive = VanillaFactory.createBlock("rawExplosive", <blockmaterial:Cake>);
+rawExplosive.axisAlignedBB = AxisAlignedBB.create(
+     0.0 / 16.0,
+     0.0 / 16.0,
+     0.0 / 16.0,
+	16.0 / 16.0,
+    0.1 / 16.0,
+    16.0 / 16.0
+	);
+rawExplosive.setLightOpacity(0);
+rawExplosive.setBlockHardness(1.0);
+rawExplosive.setBlockResistance(1.0);
+rawExplosive.setBlockSoundType(<soundtype:ground>);
+rawExplosive.setCreativeTab(<creativetab:dotdblocks>);
+rawExplosive.setEntitySpawnable(false);
+rawExplosive.setFullBlock(false);
+rawExplosive.setPassable(true);
+rawExplosive.setBlockLayer("CUTOUT");
+rawExplosive.register();

@@ -1,23 +1,8 @@
 {
-    //River
-    "minecraft:river":{
-        "Surface":"0x0084FF",
-        "Fog":"0x0084FF"
-    },
     //Frozen River
     "minecraft:frozen_river":{
         "Surface":"0x185390",
         "Fog":"0x185390"
-    },
-    //Ocean
-    "minecraft:ocean":{
-        "Surface":"0x1787D4",
-        "Fog":"0x1165B0"
-    },
-    //Deep Ocean
-    "minecraft:deep_ocean":{
-        "Surface":"0x1787D4",
-        "Fog":"0x1463A5"
     },
     //Warm Ocean
     "subaquatic:warm_ocean":{
@@ -41,13 +26,13 @@
     },
     //Cold Ocean
     "subaquatic:cold_ocean":{
-        "Surface":"0x2080C9",
-        "Fog":"0x14559B"
+        "Surface":"0x6092f2",
+        "Fog":"0x6092f2"
     },
     //Deep Cold Ocean
     "subaquatic:deep_cold_ocean":{
-        "Surface":"0x2080C9",
-        "Fog":"0x185390"
+        "Surface":"0x6092f2",
+        "Fog":"0x6092f2"
     },
     //Frozen Ocean
     "minecraft:frozen_ocean":{
