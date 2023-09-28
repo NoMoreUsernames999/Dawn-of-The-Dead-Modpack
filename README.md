@@ -18,13 +18,13 @@ See the to-do list at the bottom.
 ## Summary of the modpack:
 
 
-"Dawn of The Dead" is a hardcore zombie apocalypse horror themed modpack that, as is usual with my packs, was inspired by my dislike of existing zombie modpacks. Whether they were lackluster in not properly utilizing Lost Cities, didn't purely focus on zombies, or didn't support single player; I've not found a pure zombie apocalypse pack I've enjoyed. So I made my own. And I made it in the theme of hardcore realism. 
+"Dawn of The Dead" is a hardcore zombie apocalypse horror themed modpack that, as is usual with my packs, was inspired by my dislike of existing zombie modpacks. Whether they were lackluster in not properly utilizing Lost Cities, didn't purely focus on zombies, or didn't support single player; I've not found a pure zombie apocalypse pack I've enjoyed at the time of writing. So I made my own. And I made it in the theme of hardcore realism. 
 Setting:
-In the near future, there has been an outbreak of an unknown virus in the fictional city of Nalova. Officials quickly dub the virus, which turns people into aggressive drones that relentlessly attack anything that moves, the "Genesis Virus." The public takes to calling the infected "zombies." 
-The city is overrun in a matter of days and the virus has started to slowly spread across the country. The military's attempts to quarantine the affected cities succeeds at first, but leaks in the perimeter leading to outbreaks in surrounding areas causes more towns and cities to fall each year. With the quarantine zone continuously growing larger, it becomes clear it will only be a temporary solution... Until suddenly a rare few are discovered to be immune to the virus. Many attempts at a vaccine are made, but none succeed.
-They are missing something, a key component to understanding the Genesis Virus...
+In the near future, there has been an outbreak of a fungus in the fictional city of Nalova. Officials quickly dub the fungus the Lyssa-8, which turns people into aggressive drones that relentlessly attack anything that moves.  
+The city is overrun in a matter of days and the infection has started to slowly spread across the country. The military's attempts to quarantine the affected cities succeeds at first, but leaks in the perimeter leading to outbreaks in surrounding areas causes more towns and cities to fall each year. With the quarantine zone continuously growing larger, it becomes clear it will only be a temporary solution... Until suddenly a rare few are discovered to be immune. Many attempts at a vaccine are made, but none succeed.
+They are missing something, a key component to understanding the Lyssa-8...
 
-The player takes the role of a scientist who is immune to the virus. Your theory is that the key to a vaccine can only be found within Nalova city, where it all started. 
+The player takes the role of a scientist who is immune to the infection. Your theory is that the key to a vaccine can only be found within Nalova city, where it all started. 
 After several attempts, you have managed to convince a faction within the government to support your mission. With limited resources, they're unable to send any soldiers with you, but allow any immune volunteers (players) to accompany your mission.
 In a last ditch effort, you travel to ground zero in search of answers. You are air dropped into the city with minimal resources near an abandoned lab that will serve as your base of operations, and allow you to conduct your research. 
 With only occasional supply drops from the outside, you will be forced to scavenge supplies from abandoned buildings while trying to collect samples from the infected, and avoiding any remaining survivors that may be left in the city! 
@@ -52,7 +52,7 @@ Remember to make sure you check which branch and file path you are currently on 
 ## LostBooks:
 
 
-For writers of the team. This is where all .book files go. **Make sure you read the format.txt file** for useful formatting tips and to learn the limitations of the LostBooks mod. 
+For writers of the team. This is where all .book files go (in config/LostBooks). **Make sure you read the format.txt file** for useful formatting tips and to learn the limitations of the LostBooks mod. 
 
 All contributers will be credited in the authors file in the primary directory of LostBooks, but if you want to be credited for each specific works you upload, it is up to you to do so. 
 To do this, download the current authors.txt file (check GitHub references channel for how), and then add the name of any books you submit under the section for your username, using one line per book (you can commit changes to authors.txt as many times as is needed to list your contributions). 
@@ -87,5 +87,5 @@ All commits **must** have a description in the notes of what they changed. This 
 
 ## TO-DO list 
   
-
+See the [Trello board](https://trello.com/b/wqBXkTsr/dotd-to-do). 
  
