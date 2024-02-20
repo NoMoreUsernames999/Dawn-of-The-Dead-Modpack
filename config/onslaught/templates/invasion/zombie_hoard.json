@@ -2,9 +2,9 @@
   "zombie": {
     "name": "Zombie Horde",
     "selector": {
-      "weight": 1,
+      "weight": 100,
       "dimension": {
-        "type": "exclude",
+        "type": "include",
         "dimensions": [0]
       }
     },
