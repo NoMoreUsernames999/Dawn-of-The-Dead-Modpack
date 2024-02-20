@@ -1,11 +1,10 @@
 /options.txt
 /optionsof.txt
 /knownkeys.txt
-.curseclient
+/.curseclient
 /llibrary/
 /.mixin.out/
 /logs
-mods/
 /minemenu/
 /lootblock/
 minecraftinstance.json
@@ -14,7 +13,6 @@ realms_persistence.json
 usercache.json
 usernamecache.json
 /screenshots
-mods/OptiFine_1.16.5_HD_U_G7.jar
 /crash-reports
 /bendspacks
 /balancepacks
@@ -34,22 +32,18 @@ config/jei/worldSettings.cfg
 /config/BiomeTweaker/output/
 /config/triumph/documentation/
 /mods/hats/
-mods/LagGoggles-1.12.2-5.8-132.jar
+/mods/LagGoggles-1.12.2-5.8-132.jar
 /config/LagGoggles-server.cfg
 /config/LagGoggles-client.cfg
 /mods/TickCentral-3.2.jar
 manifest.json
 modlist.html
-mods/OptiFine_1.12.2_HD_U_G6_pre1.jar
-mods/Sound-Physics-1.12.2-1.0.10.jar
 .ReAuth.cfg
 concheckrmd
 .gamelaunched
 servers.dat
 /downloads/
 /resourcepacks/*.zip
-!/resourcepacks/DoTD+Official.zip
-/mods/Green Screens 2.0.jar
 /shaderpacks/BSL_v8.1.02.2.zip
 /shaderpacks/Sora_Shaders_1.142.zip
 /shaderpacks/Chocapic13_V9.1_Extreme_beta_5.zip
@@ -82,3 +76,4 @@ patchouli_data.json
 /config/pyrotech/module.tech.Bloomery.Slag-Generated.json
 /config/StarvationAhoy/food_dump.json
 /local/ftbutilities/backups.json
+/profile.json
