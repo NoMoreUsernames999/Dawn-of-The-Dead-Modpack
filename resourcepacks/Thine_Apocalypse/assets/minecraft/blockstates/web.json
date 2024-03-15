@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "web_0", "weight": 1 },
+			{ "model": "web_1", "weight": 2 }
+        ]
+    }
+}

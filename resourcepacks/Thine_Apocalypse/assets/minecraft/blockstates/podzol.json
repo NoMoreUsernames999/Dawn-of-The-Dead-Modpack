@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "normal": [ 
+            { "model": "podzol_0", "weight": 1 },
+            { "model": "podzol_1", "weight": 1 },
+			{ "model": "podzol_2", "weight": 1 },
+			{ "model": "podzol_3", "weight": 1 },
+            { "model": "podzol_4", "weight": 1 },			
+            { "model": "podzol_5", "weight": 1 },
+			{ "model": "podzol_6", "weight": 1 }
+        ]
+    }
+}

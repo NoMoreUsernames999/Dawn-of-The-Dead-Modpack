@@ -1,10 +1,10 @@
 {
     "variants": {
-        "": [
-            { "model": "block/andesite", "weight": 1 },
-			{ "model": "block/andesite_1", "weight": 2 },
-			{ "model": "block/andesite_2", "weight": 4 },
-			{ "model": "block/andesite_3", "weight": 1 }
+        "normal": [
+            { "model": "andesite_0", "weight": 1 },
+			{ "model": "andesite_1", "weight": 2 },
+			{ "model": "andesite_2", "weight": 4 },
+			{ "model": "andesite_3", "weight": 1 }
         ]
     }
 }

@@ -1,8 +1,8 @@
 {
   "general": {
-    "dumpCraftingConfig": {
+    "generateOverrideConfigs": {
       "value": false,
-      "comment": "If true, then all recipes for all items in packs will be dumped into the config file at boot.  WARNING: this will overwrite your existing crafting overrides file!"
+      "comment": "If true, then crafting and damage override config files, as well as language template files, will be dumped into the config folder at boot.  WARNING: this will overwrite your existing override config files!  Language files must be put into packs to function and will NOT overwrite anything."
     },
     "opSignEditingOnly": {
       "value": false,
@@ -13,7 +13,7 @@
       "comment": "If true, only OPs will be able to pick up vehicles with wrenches.  Does not affect client worlds."
     },
     "creativePickupVehiclesOnly": {
-      "value": true,
+      "value": false,
       "comment": "If true, vehicles can only be picked up in creative mode."
     },
     "keyRequiredToStartVehicles": {
@@ -22,7 +22,7 @@
     },
     "blockBreakage": {
       "value": true,
-      "comment": "Whether or not vehicles and guns can break blocks when they hit them.  If false, vehicles will simply stop when they hit blocks, and guns won't break blocks when they hit them.  This will also disable explosive block breakage, though not explosions themselves."
+      "comment": "Whether or not vehicles and guns can break blocks when they hit them.  If false, vehicles will simply stop when they hit blocks, and guns won't break blocks when they hit them.  This will also disable explosive block breakage (though not explosions themselves) and prevent incendiary bullets from setting blocks on fire."
     },
     "vehicleDestruction": {
       "value": true,
@@ -37,7 +37,7 @@
       "comment": "If true, damage from vehicles and guns will be applied to creative players."
     },
     "chunkloadVehicles": {
-      "value": false,
+      "value": true,
       "comment": "If true, vehicles will be chunkloaded when on roads/tracks.  This allows them to travel into unloaded chunks."
     },
     "doLegacyLightCompats": {
@@ -53,7 +53,7 @@
       "comment": "If true, all planes will have the ability to use beacons for navigation.  This is false to allow pack authors to define new/old planes that have this capability, but can be turned on if you don't care about realism."
     },
     "giveManualsOnJoin": {
-      "value": false,
+      "value": true,
       "comment": "If true, then whenever a new player joins a world, they will be given a copy of the mod manuals."
     },
     "devMode": {
@@ -65,28 +65,32 @@
       "comment": "How long a single segment of road can be, in blocks.  While you can have longer segements, be aware they have more collision boxes and will generate more lag when broken or interacted with, and may not render if outside the chunk they are in.  Must be a whole number."
     },
     "aircraftSpeedFactor": {
-      "value": 0.3,
+      "value": 0.35,
       "comment": "Factor to apply to aircraft movement.  1 is the realistic value, but this makes vehicles move too fast for Minecraft. Adjust with caution."
     },
     "carSpeedFactor": {
-      "value": 0.3,
+      "value": 0.35,
       "comment": "Factor to apply to car movement.  1 is the realistic value, but this makes vehicles move too fast for Minecraft. Adjust with caution."
     },
     "fuelUsageFactor": {
       "value": 1.0,
-      "comment": "Factor times which engines use fuel.  Change this if you think engines use fuel too fast or slow."
+      "comment": "Factor times which engines use fuel.  Change this if you think engines use fuel too fast or slow.  Setting it to 0 will disable fuel and allow engines to run without it."
     },
     "engineHoursFactor": {
       "value": 1.0,
       "comment": "Factor times which engines hours accumulate.  Change this if you want to adjust how fast engines wear out."
     },
     "climbSpeed": {
-      "value": 0.1,
+      "value": 0.125,
       "comment": "How far a vehicle will 'climb' blocks every tick when the wheels go into the ground.  Higher values make vehicles climb blocks quicker at the cost of smooth movement."
     },
     "gravityFactor": {
-      "value": 1.2,
+      "value": 1.0,
       "comment": "Factor for gravitational forces applied to vehicles.  Can be adjusted if you think cars are too 'floaty'.  Does not affect aircraft."
+    },
+    "maxFlightHeight": {
+      "value": 0.0,
+      "comment": "How high planes can fly.  Setting this to 0 (default) will allow planes to fly as high as their natural physics allows.  Useful if you want to cap vertical height for some reason."
     },
     "engineSpeedTempFactor": {
       "value": 1.0,
@@ -95,6 +99,14 @@
     "engineBiomeTempFactor": {
       "value": 1.0,
       "comment": "Factor for how biome temp affects engine temp.  Higher values will make engines heat up quicker in hotter biomes."
+    },
+    "rfToElectricityFactor": {
+      "value": 0.02,
+      "comment": "Factor for converting RF to internal electicity for vehicles.  Default value is 1/100, but can be adjusted."
+    },
+    "vehicleDeathDespawnTime": {
+      "value": 0.0,
+      "comment": "Time (in seconds) between when vehicles reach 0 health and they de-spawn.  Normally 0, which means they never de-spawn."
     },
     "engineDimensionBlacklist": {
       "value": [],
@@ -106,16 +118,24 @@
     },
     "packVehicleScales": {
       "value": {
+        "blueboyscaterpillarmtspack": 1.0,
         "mtsofficialpack": 1.0,
-        "helicopterpack": 1.0,
+        "lechoir": 1.0,
+        "randallag": 1.0,
+        "ivv": 1.0,
+        "warkpavement": 1.0,
         "mts": 1.0
       },
       "comment": "Scale of all vehicles for this pack.  You probably won't want to change this, but if you do want the vehicles to be smaller for some reason, you can."
     },
     "packSpeedFactors": {
       "value": {
+        "blueboyscaterpillarmtspack": 1.0,
         "mtsofficialpack": 1.0,
-        "helicopterpack": 0.8,
+        "lechoir": 1.0,
+        "randallag": 1.0,
+        "ivv": 1.0,
+        "warkpavement": 1.0,
         "mts": 1.0
       },
       "comment": "A mapping of pack-speciifc speed factors.  These values will only apply to the vehicles in the pack modified.  This allows for speeding up packs with slower vehicles, or slowing down packs with fast vehicles for a more even play experience.  Note that this applies on top of the global speed factor.  So if that is set to 0.30, and a pack is set to 0.5, then the total speed factor will be 0.15"
@@ -154,7 +174,7 @@
       "comment": "Whether or not velocity is ignored when calculating wheel damage."
     },
     "allowExternalDamage": {
-      "value": true,
+      "value": false,
       "comment": "Whether or not non-IV things can damage vehicles.  This is normally false, as external damage is a hassle for most people, but can be true if you want other mod's guns to be able to attack vehicles in addition to IV's."
     },
     "propellerDamageFactor": {
@@ -177,17 +197,21 @@
       "value": 1.0,
       "comment": "Factor for damage caused by bullets on vehicles."
     },
-    "engineLeakProbability": {
-      "value": 0.01,
-      "comment": "Chance an engine will spring a leak if hit.  Explosions cause 10x this chance."
-    },
-    "crashItemDropPercentage": {
-      "value": 0.75,
-      "comment": "Percent that a crafting ingredient will be dropped when a vehicle is crashed.  Note that fire/explosions may destroy these items if enabled, so just because they drop does not mean you will get all of them."
-    },
     "wheelDamageMinimumVelocity": {
       "value": 0.2,
       "comment": "Minimum velocity (blocks/second) which vehicles must be going to damage entities with their wheels."
+    },
+    "packBulletDamageFactors": {
+      "value": {
+        "blueboyscaterpillarmtspack": 1.0,
+        "mtsofficialpack": 1.0,
+        "lechoir": 1.0,
+        "randallag": 1.0,
+        "ivv": 1.0,
+        "warkpavement": 1.0,
+        "mts": 1.0
+      },
+      "comment": "A mapping of pack-speciifc bullet damage factors.  These values will apply to all bullets in a pack when they hit something, be it a vehicle or entity."
     }
   },
   "fuel": {
@@ -200,50 +224,100 @@
       "diesel": {
         "creosote": 0.7,
         "diesel": 1.0,
+        "lava": 1.0,
         "oil": 0.5,
         "biodiesel": 0.8
       },
       "furnace": {
         "lava": 1.0
       },
+      "nothing": {},
+      "electric": {
+        "lava": 1.0
+      },
       "avgas": {
         "lava": 1.0,
         "gasoline": 1.0
+      },
+      "electricity": {
+        "lava": 1.0
       },
       "gasoline": {
         "lava": 1.0,
         "gasoline": 1.0,
         "ethanol": 0.85
+      },
+      "hydrogen": {
+        "lava": 1.0
+      },
+      "water": {
+        "lava": 1.0
       }
     },
     "lastLoadedFluids": {
-      "concrete": "Liquid Concrete",
+      "sakura.beer": "Beer",
+      "grapejuice": "Grape Juice",
       "wood_tar": "Wood Tar",
-      "gloamberry_wine": "Gloamberry Wine",
+      "sakura.yeast_liquid": "Yeast Liquid",
+      "mead": "Mead",
       "pyroberry_wine": "Pyroberry Wine",
+      "oliveoil": "Olive Oil",
+      "applejuice": "Apple Juice",
       "paraffin": "Paraffin",
       "ovis_atre_milk": "Ovis Atre Milk",
-      "ethanol": "Ethanol",
-      "lava": "Lava",
+      "sakura.sake": "Sake",
+      "sakura.shouchu": "Shouchu",
+      "sakura.brandy": "Brandy",
+      "sakura.white_wine": "White Wine",
       "urushi": "Urushi",
-      "steam": "Steam",
-      "magma_basaltic": "Basaltic Magma",
+      "ale": "Ale",
+      "sakura.doburoku": "Doburoku",
       "bitumen_boiling": "Boiling Bitumen",
       "betterquesting.placeholder": "Placeholder",
+      "sakura.whiskey": "Whiskey",
       "biodiesel": "Biodiesel",
-      "creosote": "Creosote Oil",
       "waste": "Waste Water",
-      "potion": "Potion",
       "brine_netjry": "Brine",
+      "sakura.red_wine": "Red Wine",
       "bitumen": "Bitumen",
-      "plantoil": "Plant Oil",
-      "smoke": "Smoke",
+      "magnesium_lactate": "Magnesium Lactate",
+      "milk": "Milk",
+      "sakura.grape_fluid": "Grape Fluid",
       "water": "Water",
       "tannin": "Tannin",
       "liquid_clay": "Liquid Clay",
-      "coal_tar": "Coal Tar",
+      "sakura.food_oil": "Food Oil",
       "freckleberry_wine": "Freckleberry Wine",
-      "lamp_oil": "Lamp Oil"
+      "mushroom_stew": "Mushroom Stew",
+      "sakura.vodka": "Vodka",
+      "sakura.rum": "Rum",
+      "wine": "Wine",
+      "concrete": "Liquid Concrete",
+      "ironwine": "Iron Wine",
+      "sakura.cocoa_liqueur": "Cocoa Liqueur",
+      "gloamberry_wine": "Gloamberry Wine",
+      "ethanol": "Ethanol",
+      "cider": "Cider",
+      "lava": "Lava",
+      "honey": "Honey",
+      "sakura.liqueur": "Liqueur",
+      "sakura.hot_spring_water": "Hot Spring Water",
+      "steam": "Steam",
+      "wildberryjuice": "Wildberry Juice",
+      "magma_basaltic": "Basaltic Magma",
+      "ironberryjuice": "Ironberry Juice",
+      "creosote": "Creosote Oil",
+      "potion": "Potion",
+      "plantoil": "Plant Oil",
+      "smoke": "Smoke",
+      "sakura.maple_syrup": "Maple Syrup",
+      "sakura.champagne": "Champagne",
+      "coal_tar": "Coal Tar",
+      "sakura.green_grape_fluid": "Green Grape Fluid",
+      "lamp_oil": "Lamp Oil",
+      "alewort": "Ale Wort",
+      "milk_of_lime": "Milk of Lime",
+      "wildberrywine": "Wildberry Wine"
     }
   }
 }

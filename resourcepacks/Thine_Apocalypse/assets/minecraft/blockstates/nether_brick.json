@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "nether_brick_0", "weight": 1 },
+			{ "model": "nether_brick_1", "weight": 1 },
+			{ "model": "nether_brick_2", "weight": 1},
+			{ "model": "nether_brick_3", "weight": 1 }
+        ]
+    }
+}

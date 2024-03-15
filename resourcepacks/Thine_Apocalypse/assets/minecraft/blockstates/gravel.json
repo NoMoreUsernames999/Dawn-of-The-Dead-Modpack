@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "gravel_0", "weight": 1 },
+			{ "model": "gravel_1", "weight": 1 },
+			{ "model": "gravel_2", "weight": 1 },
+			{ "model": "gravel_3", "weight": 1 }
+        ]
+    }
+}

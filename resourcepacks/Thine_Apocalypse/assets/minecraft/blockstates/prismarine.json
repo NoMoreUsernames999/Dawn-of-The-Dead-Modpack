@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "prismarine_0", "weight": 1 },
+			{ "model": "prismarine_1", "weight": 2 },
+			{ "model": "prismarine_2", "weight": 4 },
+			{ "model": "prismarine_3", "weight": 1 }
+        ]
+    }
+}

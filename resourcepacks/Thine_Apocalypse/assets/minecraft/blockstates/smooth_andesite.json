@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [
+            { "model": "polished_andesite_0", "weight": 1 },
+			{ "model": "polished_andesite_1", "weight": 1 },
+			{ "model": "polished_andesite_2", "weight": 1 },
+			{ "model": "polished_andesite_3", "weight": 1 }
+        ]
+    }
+}

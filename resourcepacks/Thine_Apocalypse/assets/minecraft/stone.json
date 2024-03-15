@@ -1,0 +1,15 @@
+{
+    "variants": {
+        "normal": [ 
+            { "model": "stone_0", "weight": 1 },
+            { "model": "stone_1", "weight": 1 },
+			{ "model": "stone_2", "weight": 1 },
+            { "model": "stone_3", "weight": 1 },
+			{ "model": "stone_4", "weight": 1 },
+            { "model": "stone_5", "weight": 1 },
+			{ "model": "stone_6", "weight": 1 },
+            { "model": "stone_7", "weight": 1 },
+            { "model": "stone_8", "weight": 1 }
+        ]
+    }
+}
