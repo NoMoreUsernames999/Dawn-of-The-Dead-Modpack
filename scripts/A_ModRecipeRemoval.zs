@@ -1,27 +1,15 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 
 print("ModRecipeRemoval starting!"); //Mark beggining of script. 
 
 
-//========================================Cooking For Blockheads:========================================
+//========================================Ceramics:========================================
 
 
-print("Cooking for blockheads removals starting!"); //======Mark start of phase.
+print("Ceramics removals starting!"); //======Mark start of phase.
 
-recipes.remove(<cookingforblockheads:ice_unit>);
-recipes.remove(<cookingforblockheads:heating_unit>);
-recipes.remove(<cookingforblockheads:fruit_basket>);
-recipes.remove(<cookingforblockheads:corner>);
-recipes.remove(<cookingforblockheads:cabinet>);
-recipes.remove(<cookingforblockheads:counter>);
-recipes.remove(<cookingforblockheads:spice_rack>);
-recipes.remove(<cookingforblockheads:counter>);
-recipes.remove(<cookingforblockheads:toaster>);
-recipes.remove(<cookingforblockheads:cooking_table>);
-recipes.remove(<cookingforblockheads:oven>);
-recipes.remove(<cookingforblockheads:fridge>);
-recipes.remove(<cookingforblockheads:sink>);
-recipes.remove(<cookingforblockheads:tool_rack>);
+
 
 print("Cooking for blockheads removals complete"); //======Mark end of phase. 
 
@@ -84,9 +72,9 @@ print("Modern warfare removals complete");
 print("Fishing made better removals starting!"); 
 
 recipes.removeShaped(<fishingmadebetter:fishing_rod_iron>, [
-	[null,null,<ore:ingotiron>],
-	[null,<ore:ore:ingotiron>,<fishingmadebetter:bobber_basic>],
-	[<ore:ore:ingotiron>,<fishingmadebetter:reel_basic>,<fishingmadebetter:hook_basic>]
+	[null,null,<ore:ingotIron>],
+	[null,<ore:ingotIron>,<fishingmadebetter:bobber_basic>],
+	[<ore:ingotIron>,<fishingmadebetter:reel_basic>,<fishingmadebetter:hook_basic>]
 ]);
 recipes.removeShaped(<fishingmadebetter:fishing_rod_diamond>, [
 	[null,null,<minecraft:diamond>],
@@ -206,20 +194,12 @@ print("CameraObscura removals complete");
 
 print("Misc removals starting!"); 
 
-recipes.remove(<burlapsack:burlap_sack>);
+recipes.removeByMod("burlapsack");
 recipes.remove(<energymeters:meter>);
 recipes.removeByMod("firstaid");
 recipes.removeByMod("spartanshields");
 recipes.removeByMod("locks");
 recipes.removeByMod("astikorcarts");
-recipes.remove(<simplycats:treat_bag>);
-recipes.remove(<simplycats:laser_pointer>);
-recipes.remove(<simplycats:window_perch_dark_oak>);
-recipes.remove(<simplycats:window_perch_acacia>);
-recipes.remove(<simplycats:window_perch_jungle>);
-recipes.remove(<simplycats:window_perch_birch>);
-recipes.remove(<simplycats:window_perch_oak>);
-recipes.remove(<simplycats:window_perch_spruce>);
 recipes.removeByMod("xplosives");
 recipes.remove(<dynamicstealth:handmirror>);
 recipes.removeByMod("sophisticatedwolves"); 
@@ -231,6 +211,31 @@ recipes.removeByMod("of");
 recipes.removeByMod("gaspunk");
 recipes.removeByMod("air_support");
 recipes.removeByMod("floodlights");
+recipes.removeByMod("advancedmortars");
+recipes.remove(<cgm:workbench>);
+recipes.removeByMod("arcademod");
+recipes.removeByMod("better_diving");
+recipes.removeShapeless(<ceramics:unfired_clay>, [<minecraft:quartz>,<minecraft:clay_ball>,<minecraft:clay_ball>]);
+recipes.removeShapeless(<ceramics:unfired_clay>, [<minecraft:dye:15>,<minecraft:clay_ball>]);
+recipes.removeByMod("customsignposts");
+recipes.removeByMod("davincisvessels");
+recipes.removeByMod("yurtmod");
+recipes.removeByMod("survivalinc");
+recipes.removeByMod("waystones");
+recipes.remove(<dtsakuracompact:maple_spile>);
+recipes.removeByMod("paniclecraft");
+recipes.removeByMod("exsartagine:smelter");
+recipes.remove(<musictriggers:blank_record>);
+recipes.removeByMod("simplycats");
+recipes.removeByMod("mts");
+recipes.remove(<clef:block_instrument_player>);
+recipes.removeByMod("horse_tack");
+recipes.removeShaped(<dynamicstealth:handmirror>, [
+	[null,<minecraft:glass_pane>,null],
+	[null,<ore:ingotIron>,null],
+	[null,null,null]
+]);
+recipes.removeByMod("sips");
 
 print("Misc removals complete!"); 
 
