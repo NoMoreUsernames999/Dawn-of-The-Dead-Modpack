@@ -10,6 +10,7 @@
 minecraftinstance.json
 realms_persistence.json
 /saves
+mods/
 usercache.json
 usernamecache.json
 /screenshots
