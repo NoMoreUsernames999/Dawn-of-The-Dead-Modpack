@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"texture": "chopper.png",
-	"textureSize": [128, 128],
+	"texture": "ghast.png",
+	"textureSize": [256, 256],
 	"models": [
 		{
 			"part": "body",
@@ -9,34 +9,12 @@
 			"invertAxis": "xy",
 			"translate": [0, -20, 0],
 			"boxes": [
-				{"coordinates": [-6, 12, -10, 12, 11, 20], "textureOffset": [0, 0]},
-				{"coordinates": [-3, 15, 10, 6, 6, 20], "textureOffset": [0, 31]},
-				{"coordinates": [-4, 13, -17, 8, 7, 13], "textureOffset": [56, 32]},
-				{"coordinates": [-1, 22.5, -0.5, 2, 6, 2], "textureOffset": [0, 31]},
+				{"coordinates": [-6, 12, -10, 12, 11, 20], "textureOffset": [0, 34]},
+				{"coordinates": [-3, 15, 10, 6, 6, 20], "textureOffset": [44, 45]},
+				{"coordinates": [-4, 13, -17, 8, 7, 13], "textureOffset": [0, 65]},
+				{"coordinates": [-1, 22.5, -0.5, 2, 6, 2], "textureOffset": [0, 11]},
+				{"coordinates": [-17, 28.5, -16.5, 34, 0, 34], "textureOffset": [0, 0]},
 				{"coordinates": [-1, 21, 25, 2, 6, 5], "textureOffset": [0, 0]}
-			],
-			"submodels": [
-				{
-					"id": "bone2",
-					"invertAxis": "xy",
-					"translate": [0, 29.5, 0.5],
-					"boxes": [
-						{"coordinates": [-2, -1, -2, 4, 2, 4], "textureOffset": [0, 11]},
-						{"coordinates": [-1, -0.5, -21.5, 2, 1, 20], "textureOffset": [44, 11]},
-						{"coordinates": [-1, -0.5, 1.5, 2, 1, 20], "textureOffset": [32, 37]},
-						{"coordinates": [-20, -0.5, -1, 18, 1, 2], "textureOffset": [44, 3]},
-						{"coordinates": [2, -0.5, -1, 18, 1, 2], "textureOffset": [44, 0]}
-					]
-				},
-				{
-					"id": "bone",
-					"invertAxis": "xy",
-					"translate": [0, 18.5, -11.5],
-					"rotate": [-45, 0, 0],
-					"boxes": [
-						{"coordinates": [-3, -2.5, -2.5, 6, 5, 7], "textureOffset": [0, 57]}
-					]
-				}
 			],
 			"animations": [
 				{

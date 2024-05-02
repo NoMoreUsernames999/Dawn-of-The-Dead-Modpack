@@ -236,6 +236,8 @@ recipes.removeShaped(<dynamicstealth:handmirror>, [
 	[null,null,null]
 ]);
 recipes.removeByMod("sips");
+recipes.removeByMod("antiqueatlas");
+recipes.removeByMod("clipboard");
 
 print("Misc removals complete!"); 
 

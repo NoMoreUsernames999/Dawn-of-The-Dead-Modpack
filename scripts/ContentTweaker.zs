@@ -9,6 +9,9 @@ import crafttweaker.command.ICommand;
 import crafttweaker.command.ICommandSender;
 import crafttweaker.command.ICommandManager;
 import crafttweaker.server.IServer;
+import crafttweaker.events.IEventManager;
+import crafttweaker.item.IItemStack;
+import crafttweaker.player.IPlayer;
 import mods.contenttweaker.CreativeTab;
 import mods.contenttweaker.AxisAlignedBB;
 
@@ -18,12 +21,25 @@ customBlockTab.register();
 var silvercoin = VanillaFactory.createItem("silvercoin");
 silvercoin.maxStackSize = 64;
 silvercoin.rarity = "uncommon";
+
 silvercoin.itemRightClick = function(stack, world, player, hand) {
-    server.commandManager.executeCommand(server, "xp" + " 10 " + player.name);
+    server.commandManager.executeCommand(server, "xp 10 " + player.name);
     stack.shrink(1);
     return "SUCCESS";
 };
+
 silvercoin.register();
+
+static coinXp as IItemStack = <minecraft:iron_ingot>;
+events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
+    if(!event.world.isRemote()){
+        val itemStack = event.item as IItemStack;     
+        if ((itemStack.definition.id).matches(coinXp.definition.id)) {  
+            server.commandManager.executeCommand(server, "xp 10 " + player.name);
+            stack.shrink(1);
+        }  
+    }
+});
 
 var candyBar = VanillaFactory.createBlock("candyBar", <blockmaterial:Cake>);
 candyBar.axisAlignedBB = AxisAlignedBB.create(
