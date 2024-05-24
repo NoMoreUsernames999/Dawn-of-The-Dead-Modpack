@@ -1,0 +1,1 @@
+This directory is for all scripts related to ContentTweaker and new blocks/ items made with other script systems and/ or CT addons.

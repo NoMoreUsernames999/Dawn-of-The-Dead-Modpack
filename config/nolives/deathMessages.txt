@@ -1,1 +1,1 @@
-You have %s attempts left before zombies overrun the city
+You manage to escape, albiet injured, dropping some gear along the way. You can escape %s more times before your injuries catch up with you.

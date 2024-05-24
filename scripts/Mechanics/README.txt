@@ -1,0 +1,1 @@
+This directory is for all scripts and events related to custom mechanics.

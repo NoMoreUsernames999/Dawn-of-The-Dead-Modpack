@@ -71,7 +71,7 @@
       "comment": "If true, then the gas key will only be a half-throttle, with the MOD+Throttle key becoming the full-speed control.  Useful if you want a more controlled vehicle experience.  Only valid on car/boat types with on-off throttles, and does not work in conjunction with simpleThrottle as that changes how the MOD key works with gas and brake keys."
     },
     "autostartEng": {
-      "value": true,
+      "value": false,
       "comment": "If true, engines will automatically start when a driver enters a vehicle, and will turn off when they leave.  The parking brake will also be applied when leaving the vehicle.  Note: this does not bypass the fuel or electrical system."
     },
     "autoTrnSignals": {

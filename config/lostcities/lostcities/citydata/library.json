@@ -238,9 +238,9 @@
     "name": "city_static",
     "inherit": "citystyle_common",
     "dimension": 0,
-    "chunkx": 100,
-    "chunkz": 100,
-    "radius": 200,
+    "chunkx": 80,
+    "chunkz": 80,
+    "radius": 400,
     "buildings": [
       {
         "factor": 1.0,
@@ -260,12 +260,71 @@
   },
   {
     "type": "city",
+    "name": "city_static_two",
+    "inherit": "citystyle_common",
+    "dimension": 0,
+    "chunkx": 136,
+    "chunkz": 80,
+    "radius": 400,
+    "buildings": [
+      {
+        "factor": 1.0,
+        "building": "buildingempty", 
+        "chunkx": 0,
+        "chunkz": 0
+      } 
+    ],
+    "multibuildings": [
+      {
+        "factor": 1.0,
+        "multibuilding": "center",
+        "chunkx": 4,
+        "chunkz": 0
+      } 
+    ]
+  },
+  {
+    "type": "city",
+    "name": "city_static_three",
+    "inherit": "citystyle_common",
+    "dimension": 0,
+    "chunkx": 192,
+    "chunkz": 80,
+    "radius": 400,
+    "buildings": [
+      {
+        "factor": 1.0,
+        "building": "buildingempty", 
+        "chunkx": 0,
+        "chunkz": 0
+      } 
+    ],
+    "multibuildings": [
+      {
+        "factor": 1.0,
+        "multibuilding": "center",
+        "chunkx": 4,
+        "chunkz": 0
+      } 
+    ]
+  },
+  {
+    "type": "city",
+    "name": "city_static_four",
+    "inherit": "citystyle_common",
+    "dimension": 0,
+    "chunkx": 136,
+    "chunkz": 136,
+    "radius": 400
+  },
+  {
+    "type": "city",
     "name": "city_town",
     "inherit": "citystyle_common",
     "dimension": 0,
-    "chunkx": 100,
-    "chunkz": -100,
-    "radius": 40,
+    "chunkx": 136,
+    "chunkz": 24,
+    "radius": 320,
     "multibuildings": [
       {
         "factor": 1.0,
