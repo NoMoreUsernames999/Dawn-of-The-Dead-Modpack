@@ -13,7 +13,7 @@
       "comment": "If true, only OPs will be able to pick up vehicles with wrenches.  Does not affect client worlds."
     },
     "creativePickupVehiclesOnly": {
-      "value": false,
+      "value": true,
       "comment": "If true, vehicles can only be picked up in creative mode."
     },
     "keyRequiredToStartVehicles": {
@@ -56,6 +56,10 @@
       "value": true,
       "comment": "If true, then whenever a new player joins a world, they will be given a copy of the mod manuals."
     },
+    "performModCompatFunctions": {
+      "value": true,
+      "comment": "If true, mod compatibility functions will be executed.  Should be true unless you're configuring a modpack and know and have addressed the various incompatibilities."
+    },
     "devMode": {
       "value": false,
       "comment": "If enabled, MTS will allow access to the dev mode GUI while sitting in vehicles.  The GUI allows editing JSONs in-game without the need to restart."
@@ -65,11 +69,11 @@
       "comment": "How long a single segment of road can be, in blocks.  While you can have longer segements, be aware they have more collision boxes and will generate more lag when broken or interacted with, and may not render if outside the chunk they are in.  Must be a whole number."
     },
     "aircraftSpeedFactor": {
-      "value": 0.35,
+      "value": 0.25,
       "comment": "Factor to apply to aircraft movement.  1 is the realistic value, but this makes vehicles move too fast for Minecraft. Adjust with caution."
     },
     "carSpeedFactor": {
-      "value": 0.35,
+      "value": 0.25,
       "comment": "Factor to apply to car movement.  1 is the realistic value, but this makes vehicles move too fast for Minecraft. Adjust with caution."
     },
     "fuelUsageFactor": {
@@ -81,7 +85,7 @@
       "comment": "Factor times which engines hours accumulate.  Change this if you want to adjust how fast engines wear out."
     },
     "climbSpeed": {
-      "value": 0.125,
+      "value": 0.12,
       "comment": "How far a vehicle will 'climb' blocks every tick when the wheels go into the ground.  Higher values make vehicles climb blocks quicker at the cost of smooth movement."
     },
     "gravityFactor": {
@@ -89,7 +93,7 @@
       "comment": "Factor for gravitational forces applied to vehicles.  Can be adjusted if you think cars are too 'floaty'.  Does not affect aircraft."
     },
     "maxFlightHeight": {
-      "value": 0.0,
+      "value": 300.0,
       "comment": "How high planes can fly.  Setting this to 0 (default) will allow planes to fly as high as their natural physics allows.  Useful if you want to cap vertical height for some reason."
     },
     "engineSpeedTempFactor": {
@@ -105,7 +109,7 @@
       "comment": "Factor for converting RF to internal electicity for vehicles.  Default value is 1/100, but can be adjusted."
     },
     "vehicleDeathDespawnTime": {
-      "value": 0.0,
+      "value": 30.0,
       "comment": "Time (in seconds) between when vehicles reach 0 health and they de-spawn.  Normally 0, which means they never de-spawn."
     },
     "engineDimensionBlacklist": {
@@ -122,9 +126,43 @@
         "mtsofficialpack": 1.0,
         "lechoir": 1.0,
         "randallag": 1.0,
-        "ivv": 1.0,
+        "ivv": 0.9,
         "warkpavement": 1.0,
-        "mts": 1.0
+        "mts": 1.0,
+        "craftspeedwheels": 1.0,
+        "craftspeedplates": 1.0,
+        "craftspeedparts": 1.0,
+        "craftspeedengines": 1.0,
+        "craftspeed": 1.3,
+        "acmetesting": 1.0,
+        "acmebase": 1.0,
+        "acmearmory": 1.0,
+        "brcraftcars": 1.0,
+        "acmecivil": 1.0,
+        "cmaaviationtransport": 1.0,
+        "cmamilitarytransport": 1.0,
+        "cmactruckpartsfortransport": 1.0,
+        "zdvehicle": 1.0,
+        "cmacitizenstransport": 1.0,
+        "cmapartsfortransport": 1.0,
+        "iavm": 1.0,
+        "iav": 1.0,
+        "liquidspack": 1.0,
+        "avorissignspack_marker": 1.0,
+        "avorisparts": 1.0,
+        "avorisvehicles": 1.0,
+        "auweschveb": 1.0,
+        "panzerkrieg": 1.0,
+        "vehiclesofsurvival": 1.0,
+        "potatpacc": 1.0,
+        "gustnov-motorsportsdeco": 1.0,
+        "gustnov-motorsportsparts": 1.0,
+        "auweschvebh": 1.0,
+        "ccynho": 1.0,
+        "svmp": 1.0,
+        "auweschvebx": 1.0,
+        "auweschvebm": 1.0,
+        "gustnov-motorsports": 1.0
       },
       "comment": "Scale of all vehicles for this pack.  You probably won't want to change this, but if you do want the vehicles to be smaller for some reason, you can."
     },
@@ -136,7 +174,41 @@
         "randallag": 1.0,
         "ivv": 1.0,
         "warkpavement": 1.0,
-        "mts": 1.0
+        "mts": 1.0,
+        "craftspeedwheels": 1.0,
+        "craftspeedplates": 1.0,
+        "craftspeedparts": 1.0,
+        "craftspeedengines": 1.0,
+        "craftspeed": 1.0,
+        "acmetesting": 1.0,
+        "acmebase": 1.0,
+        "acmearmory": 1.0,
+        "brcraftcars": 1.0,
+        "acmecivil": 1.0,
+        "cmaaviationtransport": 1.0,
+        "cmamilitarytransport": 1.0,
+        "cmactruckpartsfortransport": 1.0,
+        "zdvehicle": 1.0,
+        "cmacitizenstransport": 1.0,
+        "cmapartsfortransport": 1.0,
+        "iavm": 1.0,
+        "iav": 1.0,
+        "liquidspack": 1.0,
+        "avorissignspack_marker": 1.0,
+        "avorisparts": 1.0,
+        "avorisvehicles": 1.0,
+        "auweschveb": 1.0,
+        "panzerkrieg": 1.0,
+        "vehiclesofsurvival": 1.0,
+        "potatpacc": 1.0,
+        "gustnov-motorsportsdeco": 1.0,
+        "gustnov-motorsportsparts": 1.0,
+        "auweschvebh": 1.0,
+        "ccynho": 1.0,
+        "svmp": 1.0,
+        "auweschvebx": 1.0,
+        "auweschvebm": 1.0,
+        "gustnov-motorsports": 1.0
       },
       "comment": "A mapping of pack-speciifc speed factors.  These values will only apply to the vehicles in the pack modified.  This allows for speeding up packs with slower vehicles, or slowing down packs with fast vehicles for a more even play experience.  Note that this applies on top of the global speed factor.  So if that is set to 0.30, and a pack is set to 0.5, then the total speed factor will be 0.15"
     },
@@ -155,7 +227,12 @@
     },
     "joinedPlayers": {
       "value": [
-        "90be0386-3bfe-4df9-bdef-d8cef72d0fbf"
+        "90be0386-3bfe-4df9-bdef-d8cef72d0fbf",
+        "8667ba71-b85a-4004-af54-457a9734eed7",
+        "d8d5a923-7b20-43d8-883b-1150148d6955",
+        "3827a62a-d771-44ed-9d55-a333710fe2be",
+        "e6030a13-c26a-44d7-b96f-e51abae2771c",
+        "1525d842-5627-45fc-99c1-8d53ec02d6cb"
       ],
       "comment": "Listing of players that have joined this world.  Players will be given the manual on their first join."
     }
@@ -174,7 +251,7 @@
       "comment": "Whether or not velocity is ignored when calculating wheel damage."
     },
     "allowExternalDamage": {
-      "value": false,
+      "value": true,
       "comment": "Whether or not non-IV things can damage vehicles.  This is normally false, as external damage is a hassle for most people, but can be true if you want other mod's guns to be able to attack vehicles in addition to IV's."
     },
     "propellerDamageFactor": {
@@ -209,7 +286,41 @@
         "randallag": 1.0,
         "ivv": 1.0,
         "warkpavement": 1.0,
-        "mts": 1.0
+        "mts": 1.0,
+        "craftspeedwheels": 1.0,
+        "craftspeedplates": 1.0,
+        "craftspeedparts": 1.0,
+        "craftspeedengines": 1.0,
+        "craftspeed": 1.0,
+        "acmetesting": 1.0,
+        "acmebase": 1.0,
+        "acmearmory": 1.0,
+        "brcraftcars": 1.0,
+        "acmecivil": 1.0,
+        "cmaaviationtransport": 1.0,
+        "cmamilitarytransport": 1.0,
+        "cmactruckpartsfortransport": 1.0,
+        "zdvehicle": 1.0,
+        "cmacitizenstransport": 1.0,
+        "cmapartsfortransport": 1.0,
+        "iavm": 1.0,
+        "iav": 1.0,
+        "liquidspack": 1.0,
+        "avorissignspack_marker": 1.0,
+        "avorisparts": 1.0,
+        "avorisvehicles": 1.0,
+        "auweschveb": 1.0,
+        "panzerkrieg": 1.0,
+        "vehiclesofsurvival": 1.0,
+        "potatpacc": 1.0,
+        "gustnov-motorsportsdeco": 1.0,
+        "gustnov-motorsportsparts": 1.0,
+        "auweschvebh": 1.0,
+        "ccynho": 1.0,
+        "svmp": 1.0,
+        "auweschvebx": 1.0,
+        "auweschvebm": 1.0,
+        "gustnov-motorsports": 1.0
       },
       "comment": "A mapping of pack-speciifc bullet damage factors.  These values will apply to all bullets in a pack when they hit something, be it a vehicle or entity."
     }
@@ -269,7 +380,6 @@
       "brine_netjry": "Brine",
       "sakura.red_wine": "Red Wine",
       "bitumen": "Bitumen",
-      "milk": "Milk",
       "bronze": "Molten Bronze",
       "sakura.food_oil": "Food Oil",
       "freckleberry_wine": "Freckleberry Wine",
@@ -300,8 +410,8 @@
       "wildberrywine": "Wildberry Wine",
       "sakura.beer": "Beer",
       "grapejuice": "Grape Juice",
-      "wood_tar": "Wood Tar",
       "sakura.yeast_liquid": "Yeast Liquid",
+      "wood_tar": "Wood Tar",
       "mead": "Mead",
       "oliveoil": "Olive Oil",
       "applejuice": "Apple Juice",
@@ -323,7 +433,6 @@
       "water": "Water",
       "tannin": "Tannin",
       "liquid_clay": "Liquid Clay",
-      "mushroom_stew": "Mushroom Stew",
       "sakura.rum": "Rum",
       "uranium": "Molten Uranium",
       "concrete": "Liquid Concrete",

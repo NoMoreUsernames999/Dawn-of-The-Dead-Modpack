@@ -1,0 +1,1 @@
+This directory is for the setup scripts only, such as recipe removal and initializations.  

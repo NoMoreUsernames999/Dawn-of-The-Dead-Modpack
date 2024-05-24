@@ -71,6 +71,7 @@ patchouli_data.json
 /config/Loot\ Overhaul/Useful\ Info/
 /config/fancymenu/locals/*.local
 /config/codechicken/
+config/startuptimer/startup_times.json
 /*.log
 /config/pyrotech/core.compat.Ore-Generated.json
 /config/pyrotech/core.compat.Wood-Generated.json
@@ -80,5 +81,16 @@ patchouli_data.json
 /profile.json
 /playerdata/
 shaderpacks/BSL_v8.2.08.zip
-shaderpacks/Sildur's Vibrant Shaders v1.32 Extreme-VL.zip
-config/startuptimer/startup_times.json
+shaderpacks/Sildur's Vibrant Shaders v1.51 Extreme-VL.zip
+impossible_data/what_is_this_folder.txt
+config/wecui3.yml
+config/Mapmaker's Gadgets/NBTOutput.txt
+config/voicechat/username-cache.json
+/config/activity.json
+/config/spark
+config/voicechat/voicechat-client.properties
+config/voicechat/username-cache.json
+config/voicechat/voicechat-volumes.properties
+key_bindings.json
+shaderpacks/BeyondBeliefLegacy_V1.2.3.zip
+shaderpacks/Insanity-Shader-Universal-v1.600.zip
