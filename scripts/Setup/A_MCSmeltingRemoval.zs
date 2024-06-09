@@ -1,9 +1,10 @@
 #reloadable
 
-print("MCSmeltingRemoval starting!"); //Mark beggining of script. 
+//?Mark beggining of script.
+print("MCSmeltingRemoval starting!");  
 
 
-//========================================Furnace Recipes:========================================
+//#========================================Furnace Recipes:========================================
 
 
 furnace.remove(<minecraft:glass>);
@@ -18,4 +19,5 @@ furnace.remove(<minecraft:gold_ingot>);
 furnace.remove(<minecraft:rabbit_stew>);
 
 
-print("MCSmeltingRemoval finished!"); //======Mark end of this script. 
+//?======Mark end of this script. 
+print("MCSmeltingRemoval finished!"); 

@@ -30,6 +30,7 @@ silvercoin.itemRightClick = function(stack, world, player, hand) {
 
 silvercoin.register();
 
+//Todo: Finish the fixed coin function, remove the one above, and move this to its own script. Incompatible here.
 /*
 static coinXp as IItemStack = <minecraft:iron_ingot>;
 events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent){
@@ -43,11 +44,13 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 });
 */
 
+//Todo: Remove the test blocks and implement them properly.
+
 var candyBar = VanillaFactory.createBlock("candyBar", <blockmaterial:Cake>);
 candyBar.axisAlignedBB = AxisAlignedBB.create(
-     0.0 / 16.0,
-     0.0 / 16.0,
-     0.0 / 16.0,
+    0.0 / 16.0,
+    0.0 / 16.0,
+    0.0 / 16.0,
 	16.0 / 16.0,
     0.1 / 16.0,
     16.0 / 16.0
@@ -65,9 +68,9 @@ candyBar.register();
 
 var batteries = VanillaFactory.createBlock("batteries", <blockmaterial:Cake>);
 batteries.axisAlignedBB = AxisAlignedBB.create(
-     0.0 / 16.0,
-     0.0 / 16.0,
-     0.0 / 16.0,
+    0.0 / 16.0,
+    0.0 / 16.0,
+    0.0 / 16.0,
 	16.0 / 16.0,
     0.1 / 16.0,
     16.0 / 16.0
@@ -85,9 +88,9 @@ batteries.register();
 
 var batteriesTwo = VanillaFactory.createBlock("batteriesTwo", <blockmaterial:Cake>);
 batteriesTwo.axisAlignedBB = AxisAlignedBB.create(
-     0.0 / 16.0,
-     0.0 / 16.0,
-     0.0 / 16.0,
+    0.0 / 16.0,
+    0.0 / 16.0,
+    0.0 / 16.0,
 	16.0 / 16.0,
     0.1 / 16.0,
     16.0 / 16.0
@@ -105,9 +108,9 @@ batteriesTwo.register();
 
 var paperGarbage = VanillaFactory.createBlock("paperGarbage", <blockmaterial:Cake>);
 paperGarbage.axisAlignedBB = AxisAlignedBB.create(
-     0.0 / 16.0,
-     0.0 / 16.0,
-     0.0 / 16.0,
+    0.0 / 16.0,
+    0.0 / 16.0,
+    0.0 / 16.0,
 	16.0 / 16.0,
     0.1 / 16.0,
     16.0 / 16.0
@@ -125,9 +128,9 @@ paperGarbage.register();
 
 var rawExplosive = VanillaFactory.createBlock("rawExplosive", <blockmaterial:Cake>);
 rawExplosive.axisAlignedBB = AxisAlignedBB.create(
-     0.0 / 16.0,
-     0.0 / 16.0,
-     0.0 / 16.0,
+    0.0 / 16.0,
+    0.0 / 16.0,
+    0.0 / 16.0,
 	16.0 / 16.0,
     0.1 / 16.0,
     16.0 / 16.0

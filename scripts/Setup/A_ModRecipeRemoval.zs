@@ -3,106 +3,66 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-print("ModRecipeRemoval starting!"); //Mark beginning of script. 
+//?Mark beginning of script. 
+print("ModRecipeRemoval starting!"); 
 
 
-//========================================Oceanic Expanse:========================================
+//#========================================Oceanic Expanse:========================================
 
-
-print("Oceanic Expanse removals starting!"); //======Mark start of phase.
 
 mods.jei.JEI.removeAndHide(<oe:trident>);
 mods.jei.JEI.removeAndHide(<oe:conduit>);
 mods.jei.JEI.removeAndHide(<oe:turtle_helmet>);
 recipes.remove(<oe:underwater_torch>);
 
-//Remove all palm wood and coquina brick
+//* Remove all palm wood and coquina brick
 val removeOceanic = ["palm", "coquina_brick"] as string[];
 for i in loadedMods["oe"].items {
-for possible in removeOceanic { 
-    if i.name.indexOf(possible) > -1 {
-      recipes.remove(i);  
-   	 	}
+	for possible in removeOceanic { 
+		if i.name.indexOf(possible) > -1 {
+			recipes.remove(i);  
+		}
 	}
 }
 
-//Remove and hide content already added by Subaquatic
-val hideOceanic = ["kelp", "coral"] as string[];
-for i in loadedMods["oe"].items {
-for possible in hideOceanic { 
-    if i.name.indexOf(possible) > -1 {
-      mods.jei.JEI.removeAndHide(i);  
-   	 	}
-	}
-}
 
-print("Oceanic Expanse removals complete"); //======Mark end of phase. 
+//#========================================Grappling Hook:========================================
 
-
-//========================================Subaquatic:========================================
-
-
-print("Subaquatic removals starting!"); //======Mark start of phase.
-
-//Remove all stairs, walls, and slabs
-val removeSubaquatic = ["stairs", "wall", "slab"] as string[];
-for i in loadedMods["subaquatic"].items {
-for possible in removeSubaquatic { 
-    if i.name.indexOf(possible) > -1 {
-      recipes.remove(i);  
-   	 	}
-	}
-}
-
-print("Subaquatic removals complete"); //======Mark end of phase. 
-
-
-//========================================Grappling Hook:========================================
-
-
-print("Grappling hook removals starting!"); 
 
 recipes.remove(<grapplemod:grapplinghook>);
 
-							//Remove recipes and hide all upgrades and special hooks. 
+//*Remove recipes and hide all upgrades and special hooks. 
 val removedGrapple = ["upgrade", "smarthook", "repellerhook", "enderhook", "magnethook", "motorhook", "doublemotorhook", "rocketdoublemotorhook", "launcheritem", "block"] as string[];
 for i in loadedMods["grapplemod"].items {
-for possible in removedGrapple { 
-    if i.name.indexOf(possible) > -1 {
-      mods.jei.JEI.removeAndHide(i);  
-   	 	}
+	for possible in removedGrapple { 
+		if i.name.indexOf(possible) > -1 {
+			mods.jei.JEI.removeAndHide(i);  
+		}
 	}
 }
 
-print("Grappling hook removals complete"); 
 
+//#========================================Modern Warfare:========================================
 
-//========================================Modern Warfare:========================================
+//!Not currently being used, but left here in case a switch back to MW is made.
 
-//Not currently being used, but left here in case a switch back to MW is made.
+/* Block commented out
 
-/*
-
-print("Modern warfare removals starting!"); 
-
-val removedMW = ["m", "a", "s", "p", "l"] as string[];   //Remove recipes and hide all Modern Warfare items from JEI.
+//*Remove recipes and hide all Modern Warfare items from JEI.
+val removedMW = ["m", "a", "s", "p", "l"] as string[];   
 for i in loadedMods["mw"].items {
-for possible in removedMW { 
-    if i.name.indexOf(possible) > -1 {
-      mods.jei.JEI.removeAndHide(i);  
-   	 	}
+	for possible in removedMW { 
+		if i.name.indexOf(possible) > -1 {
+			mods.jei.JEI.removeAndHide(i);  
+		}
 	}
 }
-
-print("Modern warfare removals complete"); 
 
 */
 
 
-//========================================Fishing Made Better:========================================
+//#========================================Fishing Made Better:========================================
 
-
-print("Fishing made better removals starting!"); 
 
 recipes.removeShaped(<fishingmadebetter:fishing_rod_iron>, [
 	[null,null,<ore:ingotIron>],
@@ -139,13 +99,9 @@ recipes.remove(<fishingmadebetter:hook_shiny>);
 recipes.remove(<fishingmadebetter:hook_barbed>);
 recipes.remove(<fishingmadebetter:hook_magnetic>);
 
-print("Fishing made better removals complete"); 
 
+//#========================================Project Vibrant Journeys:========================================
 
-//========================================Project Vibrant Journeys:========================================
-
-
-print("PVJ removals starting!"); 
 
 recipes.remove(<pvj:sugarcane_juice>);
 recipes.remove(<pvj:cactus_salad>);
@@ -154,61 +110,52 @@ recipes.remove(<pvj:cobblestone_brick>);
 recipes.remove(<pvj:basalt_brick>);
 recipes.remove(<pvj:marble_brick>);
 
-val removedPVJ = ["slab", "stairs", "wall", "boat", "trapdoor", "door", "fence", "planks"] as string[];   //Removal loop. Removal all items with listed names for consistency to vanilla changes.
+//*Removal loop. Removal all items with listed names for consistency to vanilla changes.
+val removedPVJ = ["slab", "stairs", "wall", "boat", "trapdoor", "door", "fence", "planks"] as string[];   
 for i in loadedMods["pvj"].items {
-for possible in removedPVJ { 
-    if i.name.indexOf(possible) > -1 {
-      recipes.remove(i);  
-   	 	}
+	for possible in removedPVJ { 
+		if i.name.indexOf(possible) > -1 {
+			recipes.remove(i);  
+		}
 	}
 }
 
-print("PVJ removals complete"); 
+
+//#========================================Better Animals Plus:========================================
 
 
-//========================================Better Animals Plus:========================================
-
-
-print("BetterAnimals+ removals starting!"); 
-
-val removedBAP = ["hirschgeistskullwearable", "cape", "handoffate"] as string[];   //Removal loop. Remove all capes, plus fantasy items. 
+//*Removal loop. Remove all capes for recipe change later, plus fantasy items.
+val removedBAP = ["hirschgeistskullwearable", "cape", "handoffate"] as string[];    
 for i in loadedMods["betteranimalsplus"].items {
-for possible in removedBAP { 
-    if i.name.indexOf(possible) > -1 {
-      recipes.remove(i); 
-   	 	}
+	for possible in removedBAP { 
+		if i.name.indexOf(possible) > -1 {
+			recipes.remove(i); 
+		}
 	}
 }
 
 mods.jei.JEI.hide(<betteranimalsplus:hirschgeistskullwearable>);
 mods.jei.JEI.hide(<betteranimalsplus:handoffate>);
 
-print("BetterAnimals+ removals complete"); 
 
+//#========================================Aquaculture:========================================
 
-//========================================Aquaculture:========================================
-
-
-print("Aquaculture removals starting!"); 
 
 recipes.remove(<aquaculture:food:6>);
 
-val removedF = ["neptunium", "pick"] as string[];   //Removal loop. Remove and hide all armor and weapon recipes from JEI.
+//*Removal loop. Remove and hide all fantasy armor and weapon recipes from JEI.
+val removedF = ["neptunium", "pick"] as string[];   
 for i in loadedMods["aquaculture"].items {
-for possible in removedF { 
-    if i.name.indexOf(possible) > -1 {
-      mods.jei.JEI.removeAndHide(i); 
-   	 	}
+	for possible in removedF { 
+		if i.name.indexOf(possible) > -1 {
+			mods.jei.JEI.removeAndHide(i); 
+		}
 	}
 }
 
-print("Aquaculture removals complete"); 
 
+//#========================================Camera Obscura:========================================
 
-//========================================Camera Obscura:========================================
-
-
-print("CameraObscura removals starting!"); 
 
 recipes.remove(<cameraobscura:csitem:1>);
 recipes.remove(<cameraobscura:filter:*>);
@@ -219,13 +166,10 @@ mods.jei.JEI.removeAndHide(<cameraobscura:sdcard>);
 mods.jei.JEI.removeAndHide(<cameraobscura:polaroid_stack>);
 mods.jei.JEI.removeAndHide(<cameraobscura:vintage_photo>);
 
-print("CameraObscura removals complete"); 
 
+//?(For mods that don't have enough items to justify their own section)
+//#========================================Misc Mods:======================================== 
 
-//========================================Misc Mods:======================================== (For mods that don't have enough items to justify their own section).
-
-
-print("Misc removals starting!"); 
 
 recipes.removeByMod("burlapsack");
 recipes.remove(<energymeters:meter>);
@@ -278,6 +222,5 @@ recipes.removeByMod("engineersdecor");
 recipes.removeByMod("rustic");
 
 
-print("Misc removals complete!"); 
-
-print("ModRecipeRemoval finished!"); //======Mark end of this script. 
+//?======Mark end of this script. 
+print("ModRecipeRemoval finished!"); 

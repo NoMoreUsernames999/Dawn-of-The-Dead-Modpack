@@ -4,32 +4,29 @@
   },
   "dimensions": [
     {
-        "dim": 1,
-        "unregister": true
+      "dim": 1,
+      "unregister": true
     },
-	
-	{
-        "dim": -1,
-        "unregister": true
+    {
+      "dim": -1,
+      "unregister": true
     },
-	
-	{
-            "dim": 0,
-            "override": true,
-            "dimensiontype": {
-                "id": 0,
-                "name": "overworld",
-                "suffix": "",
-                "keeploaded": true,
-                "worldprovider": "WorldProviderSurfaceJED",
-                "require_exact_match": true
-            },
-            "jed": {
-                "CustomDayCycle": true,
-                "DayLength": 48000,
-                "NightLength": 48000
-            }
+    {
+      "dim": 0,
+      "override": true,
+      "dimensiontype": {
+        "id": 0,
+        "name": "overworld",
+        "suffix": "",
+        "keeploaded": true,
+        "worldprovider": "WorldProviderSurfaceJED",
+        "require_exact_match": true
+      },
+      "jed": {
+        "CustomDayCycle": true,
+        "DayLength": 48000,
+        "NightLength": 48000
+      }
     }
   ]
 }
-

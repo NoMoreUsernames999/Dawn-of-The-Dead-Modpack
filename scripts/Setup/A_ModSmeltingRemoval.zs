@@ -1,7 +1,8 @@
 #reloadable
 
 /*
-							//Placeholder for IE removals. 
+//!Placeholder for IE removals. 
+//Todo: Finish this, add section for IE.
 val removedOres = ["ingot", "metal"] as string[];
 for i in loadedMods["immersiveengineering"].items {
 for possible in removedOres { 
@@ -12,16 +13,15 @@ for possible in removedOres {
 }
 */
 
-//========================================Furnace Recipes:========================================
+//#========================================Smelting Recipes:========================================
 
 
-print("ModSmeltingRemoval starting!"); //Mark beginning of script. 
+//?Mark beginning of script. 
+print("ModSmeltingRemoval starting!"); 
 
 
-//========================================Ceramics:========================================
+//#========================================Ceramics:========================================
 
-
-print("Ceramics removals starting!"); //======Mark start of phase.
 
 furnace.remove(<ceramics:unfired_clay>);
 furnace.remove(<ceramics:clay_bucket>);
@@ -35,20 +35,13 @@ furnace.remove(<ceramics:faucet>);
 furnace.remove(<ceramics:channel>);
 
 
-print("Ceramics removals complete"); //======Mark end of phase. 
-
-
-//========================================Pyrotech:========================================
-
-
-print("Pyrotech removals starting!"); //======Mark start of phase.
+//#========================================Pyrotech:========================================
 
 
 
-print("Pyrotech removals complete"); //======Mark end of phase. 
 
 
-//========================================Misc:========================================
+//#========================================Misc:========================================
 
 furnace.remove(<sakura:bamboo_charcoal_block>);
 furnace.remove(<mocreatures:omelet>);
@@ -56,4 +49,5 @@ furnace.remove(<oe:dried_dulse>);
 furnace.remove(<oe:dried_kelp>);
 
 
-print("ModSmeltingRemoval finished!"); //======Mark end of this script. 
+//?======Mark end of this script. 
+print("ModSmeltingRemoval finished!"); 

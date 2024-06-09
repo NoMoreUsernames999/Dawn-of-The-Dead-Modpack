@@ -1,0 +1,99 @@
+{
+    "indentRainbow.colors": [
+
+        "rgba(255,255,64,0.5)",
+        "rgba(127,255,127,0.5)",
+        "rgba(255,127,255,0.5)",
+        "rgba(79,236,236,0.5)"
+    ],
+    "indentRainbow.excludedLanguages": [],
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.lightIndicatorStyleLineWidth": 2,
+    "bookmarks.saveBookmarksInProject": true,
+    "better-comments.tags": [
+
+
+        {
+            "tag": "#",
+            "color": "#18b566",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": true,
+            "italic": false
+        },
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": [
+                "todo",
+                "to-do"
+            ],
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": true,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "better-comments.highlightPlainText": true,
+    "colorize.include": [
+
+        "**\\*.css",
+        "**\\*.scss",
+        "**\\*.sass",
+        "**\\*.less",
+        "**\\*.styl",
+        "**\\*.json",
+        "**\\*.zs"
+    ],
+    "colorize.exclude": [
+
+
+        "**\\.git",
+        "**\\.svn",
+        "**\\.hg",
+        "**\\CVS",
+        "**\\.DS_Store",
+        "**\\node_modules",
+        "**\\bower_components",
+        "**\\tmp",
+        "**\\dist",
+        "**\\tests"
+    ]
+}

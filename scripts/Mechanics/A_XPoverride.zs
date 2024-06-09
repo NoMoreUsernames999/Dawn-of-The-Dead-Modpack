@@ -3,11 +3,15 @@
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.LivingExperienceDropEvent;
 
-print("XP fix starting!"); //Mark beggining of script. 
+//?Mark beginning of script. 
+print("XP fix starting!"); 
 
-//Prevent XP from being dropped by all entities. 
+
+//*Prevent XP from being dropped by all entities. 
 events.onLivingExperienceDrop(function(event as crafttweaker.event.LivingExperienceDropEvent){
     event.cancel();
 });
 
-print("XP fix finished!"); //Mark end of script. 
+
+//?Mark end of script. 
+print("XP fix finished!"); 
