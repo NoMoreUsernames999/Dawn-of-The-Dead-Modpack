@@ -77,13 +77,6 @@
     "pvj:willow_swamp": "SWAMP",
     "sakura:bamboo_forest": "JUNGLE",
     "sakura:maple_forest": "FOREST",
-    "subaquatic:cold_ocean": "WATER",
-    "subaquatic:deep_cold_ocean": "WATER",
-    "subaquatic:deep_frozen_ocean": "ICE",
-    "subaquatic:deep_lukewarm_ocean": "WATER",
-    "subaquatic:deep_warm_ocean": "WATER",
-    "subaquatic:lukewarm_ocean": "WATER",
-    "subaquatic:warm_ocean": "WATER",
     "yurtmod:tent": "PLAINS"
   }
 }

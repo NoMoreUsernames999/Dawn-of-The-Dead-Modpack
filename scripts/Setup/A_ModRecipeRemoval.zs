@@ -10,8 +10,6 @@ print("ModRecipeRemoval starting!");
 //#========================================Oceanic Expanse:========================================
 
 
-mods.jei.JEI.removeAndHide(<oe:trident>);
-mods.jei.JEI.removeAndHide(<oe:conduit>);
 mods.jei.JEI.removeAndHide(<oe:turtle_helmet>);
 recipes.remove(<oe:underwater_torch>);
 
