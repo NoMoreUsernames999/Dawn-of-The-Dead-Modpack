@@ -98,27 +98,6 @@ recipes.remove(<fishingmadebetter:hook_barbed>);
 recipes.remove(<fishingmadebetter:hook_magnetic>);
 
 
-//#========================================Project Vibrant Journeys:========================================
-
-
-recipes.remove(<pvj:sugarcane_juice>);
-recipes.remove(<pvj:cactus_salad>);
-recipes.remove(<pvj:cracked_coconut>);
-recipes.remove(<pvj:cobblestone_brick>);
-recipes.remove(<pvj:basalt_brick>);
-recipes.remove(<pvj:marble_brick>);
-
-//*Removal loop. Removal all items with listed names for consistency to vanilla changes.
-val removedPVJ = ["slab", "stairs", "wall", "boat", "trapdoor", "door", "fence", "planks"] as string[];   
-for i in loadedMods["pvj"].items {
-	for possible in removedPVJ { 
-		if i.name.indexOf(possible) > -1 {
-			recipes.remove(i);  
-		}
-	}
-}
-
-
 //#========================================Better Animals Plus:========================================
 
 
