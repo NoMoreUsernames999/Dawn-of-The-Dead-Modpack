@@ -40,25 +40,6 @@ for i in loadedMods["grapplemod"].items {
 }
 
 
-//#========================================Modern Warfare:========================================
-
-//!Not currently being used, but left here in case a switch back to MW is made.
-
-/* Block commented out
-
-//*Remove recipes and hide all Modern Warfare items from JEI.
-val removedMW = ["m", "a", "s", "p", "l"] as string[];   
-for i in loadedMods["mw"].items {
-	for possible in removedMW { 
-		if i.name.indexOf(possible) > -1 {
-			mods.jei.JEI.removeAndHide(i);  
-		}
-	}
-}
-
-*/
-
-
 //#========================================Fishing Made Better:========================================
 
 
@@ -172,7 +153,6 @@ recipes.removeShapeless(<ceramics:unfired_clay>, [<minecraft:dye:15>,<minecraft:
 recipes.removeByMod("customsignposts");
 recipes.removeByMod("davincisvessels");
 recipes.removeByMod("yurtmod");
-recipes.removeByMod("survivalinc");
 recipes.removeByMod("waystones");
 recipes.removeByMod("paniclecraft");
 recipes.removeByMod("exsartagine");
