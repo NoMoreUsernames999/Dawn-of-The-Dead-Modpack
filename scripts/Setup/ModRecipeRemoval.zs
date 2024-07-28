@@ -40,25 +40,6 @@ for i in loadedMods["grapplemod"].items {
 }
 
 
-//#========================================Modern Warfare:========================================
-
-//!Not currently being used, but left here in case a switch back to MW is made.
-
-/* Block commented out
-
-//*Remove recipes and hide all Modern Warfare items from JEI.
-val removedMW = ["m", "a", "s", "p", "l"] as string[];   
-for i in loadedMods["mw"].items {
-	for possible in removedMW { 
-		if i.name.indexOf(possible) > -1 {
-			mods.jei.JEI.removeAndHide(i);  
-		}
-	}
-}
-
-*/
-
-
 //#========================================Fishing Made Better:========================================
 
 
@@ -96,27 +77,6 @@ recipes.remove(<fishingmadebetter:hook_basic>);
 recipes.remove(<fishingmadebetter:hook_shiny>);
 recipes.remove(<fishingmadebetter:hook_barbed>);
 recipes.remove(<fishingmadebetter:hook_magnetic>);
-
-
-//#========================================Project Vibrant Journeys:========================================
-
-
-recipes.remove(<pvj:sugarcane_juice>);
-recipes.remove(<pvj:cactus_salad>);
-recipes.remove(<pvj:cracked_coconut>);
-recipes.remove(<pvj:cobblestone_brick>);
-recipes.remove(<pvj:basalt_brick>);
-recipes.remove(<pvj:marble_brick>);
-
-//*Removal loop. Removal all items with listed names for consistency to vanilla changes.
-val removedPVJ = ["slab", "stairs", "wall", "boat", "trapdoor", "door", "fence", "planks"] as string[];   
-for i in loadedMods["pvj"].items {
-	for possible in removedPVJ { 
-		if i.name.indexOf(possible) > -1 {
-			recipes.remove(i);  
-		}
-	}
-}
 
 
 //#========================================Better Animals Plus:========================================
@@ -193,7 +153,6 @@ recipes.removeShapeless(<ceramics:unfired_clay>, [<minecraft:dye:15>,<minecraft:
 recipes.removeByMod("customsignposts");
 recipes.removeByMod("davincisvessels");
 recipes.removeByMod("yurtmod");
-recipes.removeByMod("survivalinc");
 recipes.removeByMod("waystones");
 recipes.removeByMod("paniclecraft");
 recipes.removeByMod("exsartagine");
