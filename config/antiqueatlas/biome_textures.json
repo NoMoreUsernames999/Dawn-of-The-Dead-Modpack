@@ -1,6 +1,7 @@
 {
   "version": 2,
   "data": {
+    "biometweaker:lush_forest": "FOREST",
     "minecraft:beaches": "SHORE",
     "minecraft:birch_forest": "BIRCH",
     "minecraft:birch_forest_hills": "BIRCH_HILLS",
@@ -65,16 +66,6 @@
     "minecraft:void": "END_VOID",
     "mocreatures:wyvern_desert_isles": "PLAINS",
     "mocreatures:wyvern_isles": "PLAINS",
-    "pvj:aspen_grove": "FOREST",
-    "pvj:baobab_fields": "SAVANNA",
-    "pvj:blossoming_fields": "FOREST",
-    "pvj:boreal_forest": "PINES",
-    "pvj:overgrown_spires": "JUNGLE",
-    "pvj:prairie": "PLAINS",
-    "pvj:redwood_peaks": "PINES_HILLS",
-    "pvj:redwoods": "PINES",
-    "pvj:snowy_boreal_forest": "PINES",
-    "pvj:willow_swamp": "SWAMP",
     "sakura:bamboo_forest": "JUNGLE",
     "sakura:maple_forest": "FOREST",
     "yurtmod:tent": "PLAINS"
