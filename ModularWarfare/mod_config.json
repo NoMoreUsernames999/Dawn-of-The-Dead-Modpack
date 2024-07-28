@@ -1,42 +1,33 @@
 {
   "general": {
-    "customInventory": true,
+    "customInventory": false,
+    "allowGunModifyGui": true,
     "prototype_pack_extraction": false,
     "animated_pack_extraction": false,
     "modified_pack_server_kick": false,
     "directory_pack_server_kick": false,
     "content_pack_hash_list": [],
     "drop_extra_slots_on_death": true,
-    "playerShadowOffset": 1.0
+    "serverTickVerification": true,
+    "serverShotVerification": true,
+    "playerShadowOffset": 1.0,
+    "collisionBorderSizeFixNonPlayer": 0.0
   },
   "client": {
-    "hideSecondSkinWhenDressed": true
+    "hideSecondSkinWhenDressed": true,
+    "enableBloodParticle": true,
+    "gunSmokeCorrectForBSL": true,
+    "gunSmokeCorrectForIterationT": false,
+    "gunFlashEffect": true,
+    "shellEffectCapacity": 32
   },
   "shots": {
-    "shot_break_glass": true,
+    "shot_break_glass": false,
     "knockback_entity_damage": false
   },
   "guns": {
     "guns_interaction_hand": true,
-    "anim_guns_show_default_objects": [
-      "ammoModel",
-      "leftArmModel",
-      "leftArmLayerModel",
-      "leftArmSlimModel",
-      "leftArmLayerSlimModel",
-      "rightArmModel",
-      "rightArmLayerModel",
-      "rightArmSlimModel",
-      "rightArmLayerSlimModel",
-      "flashModel",
-      "smokeModel",
-      "sprint_righthand",
-      "sprint_lefthand",
-      "selector_semi",
-      "selector_full",
-      "selector_brust",
-      "bulletModel"
-    ]
+    "acceptAttachmentDrag": true
   },
   "drops": {
     "advanced_drops_models": false,
@@ -45,8 +36,8 @@
   },
   "hud": {
     "hitmarkers": true,
-    "enable_crosshair": false,
-    "dynamic_crosshair": false,
+    "enable_crosshair": true,
+    "dynamic_crosshair": true,
     "ammo_count": true,
     "snap_fade_hit": true,
     "isDynamicFov": false,
@@ -83,5 +74,5 @@
   "model_optimization": true,
   "debug_hits_message": false,
   "dev_mode": false,
-  "version": "2023.2.4.4f"
+  "version": "2024.2.4.5f"
 }
