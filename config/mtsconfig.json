@@ -20,21 +20,9 @@
       "value": false,
       "comment": "If true, vehicles can only be started if the player has the key in their hand."
     },
-    "blockBreakage": {
-      "value": true,
-      "comment": "Whether or not vehicles and guns can break blocks when they hit them.  If false, vehicles will simply stop when they hit blocks, and guns won't break blocks when they hit them.  This will also disable explosive block breakage (though not explosions themselves) and prevent incendiary bullets from setting blocks on fire."
-    },
-    "vehicleDestruction": {
-      "value": true,
-      "comment": "Whether or not vehicles can be destroyed by ramming into blocks at high speeds.  Set this to false if you don't like loosing vehicles to badly-placed walls."
-    },
     "noclipVehicles": {
       "value": false,
       "comment": "If true, vehicles will not be able to collide with blocks.  This also prevents them from moving if they do not have wheels on them, as otherwise they would phase through the ground into the void."
-    },
-    "creativeDamage": {
-      "value": false,
-      "comment": "If true, damage from vehicles and guns will be applied to creative players."
     },
     "chunkloadVehicles": {
       "value": true,
@@ -111,6 +99,10 @@
     "vehicleDeathDespawnTime": {
       "value": 30.0,
       "comment": "Time (in seconds) between when vehicles reach 0 health and they de-spawn.  Normally 0, which means they never de-spawn."
+    },
+    "seaLevel": {
+      "value": 63,
+      "comment": "The Y-Level that will be used to base altitude off of. Will also be factored in for engine performance calculations. Change only if you know what you're doing/ why this matters to engines/flying."
     },
     "engineDimensionBlacklist": {
       "value": [],
@@ -238,9 +230,29 @@
     }
   },
   "damage": {
-    "explosions": {
+    "bulletBlockBreaking": {
       "value": true,
-      "comment": "Whether or not vehicles explode when crashed or shot down."
+      "comment": "Whether or not bullets/bombs can break blocks when they hit them.  This will also disable explosive block breakage (though not explosions themselves) and prevent incendiary bullets from setting blocks on fire."
+    },
+    "bulletExplosions": {
+      "value": true,
+      "comment": "Whether or not bullets/bombs will blow up.  This does not disable block breakage, but it will pretty much nerf all block mass-destruction weapons."
+    },
+    "vehicleBlockBreaking": {
+      "value": true,
+      "comment": "Whether or not vehicles can break blocks when they run into them.  If false, vehicles will simply stop when they hit blocks."
+    },
+    "vehicleDestruction": {
+      "value": true,
+      "comment": "Whether or not vehicles can be destroyed by ramming into blocks at high speeds.  Set this to false if you don't like loosing vehicles to badly-placed walls."
+    },
+    "vehicleExplosions": {
+      "value": true,
+      "comment": "Whether or not vehicles explode when crashed or shot down.  If this is false, vehicles will simply poof when they crash."
+    },
+    "creativePlayerDamage": {
+      "value": false,
+      "comment": "If true, damage from vehicles and guns will be applied to creative players.  Not sure why you'd want this, but it's here."
     },
     "wheelBreakage": {
       "value": true,
@@ -366,101 +378,94 @@
       }
     },
     "lastLoadedFluids": {
-      "pyroberry_wine": "Pyroberry Wine",
-      "paraffin": "Paraffin",
-      "ovis_atre_milk": "Ovis Atre Milk",
-      "sakura.shouchu": "Shouchu",
-      "sakura.brandy": "Brandy",
-      "urushi": "Urushi",
-      "sakura.doburoku": "Doburoku",
-      "bitumen_boiling": "Boiling Bitumen",
-      "betterquesting.placeholder": "Placeholder",
-      "zinc": "Molten Zinc",
-      "biodiesel": "Biodiesel",
-      "brine_netjry": "Brine",
-      "sakura.red_wine": "Red Wine",
-      "bitumen": "Bitumen",
-      "bronze": "Molten Bronze",
-      "sakura.food_oil": "Food Oil",
-      "freckleberry_wine": "Freckleberry Wine",
-      "sakura.vodka": "Vodka",
-      "silver": "Molten Silver",
-      "glass_purple": "Molten Glass (Purple)",
-      "wine": "Wine",
-      "ironwine": "Iron Wine",
-      "steel": "Molten Steel",
-      "glass_black": "Molten Glass (Black)",
-      "cobalt": "Molten Cobalt",
-      "ethanol": "Ethanol",
-      "cider": "Cider",
-      "gold": "Molten Gold",
-      "copper": "Molten Copper",
-      "sakura.hot_spring_water": "Hot Spring Water",
-      "magma_basaltic": "Basaltic Magma",
-      "electrum": "Molten Electrum",
-      "glass_silver": "Molten Glass (Light Gray)",
-      "sakura.maple_syrup": "Maple Syrup",
-      "constantan": "Molten Constantan",
-      "glass_lime": "Molten Glass (Lime)",
-      "lead": "Molten Lead",
-      "coal_tar": "Coal Tar",
-      "sakura.green_grape_fluid": "Green Grape Fluid",
-      "aluminium": "Molten Aluminium",
-      "lamp_oil": "Lamp Oil",
-      "wildberrywine": "Wildberry Wine",
       "sakura.beer": "Beer",
       "grapejuice": "Grape Juice",
       "sakura.yeast_liquid": "Yeast Liquid",
       "wood_tar": "Wood Tar",
       "mead": "Mead",
+      "pyroberry_wine": "Pyroberry Wine",
       "oliveoil": "Olive Oil",
       "applejuice": "Apple Juice",
       "glass_brown": "Molten Glass (Brown)",
       "glass_pink": "Molten Glass (Pink)",
       "sakura.sake": "Sake",
+      "sakura.shouchu": "Shouchu",
       "platinum": "Molten Platinum",
       "glass_gray": "Molten Glass (Gray)",
+      "sakura.brandy": "Brandy",
       "sakura.white_wine": "White Wine",
       "tin": "Molten Tin",
       "ale": "Ale",
+      "sakura.doburoku": "Doburoku",
+      "betterquesting.placeholder": "Placeholder",
       "sakura.whiskey": "Whiskey",
-      "waste": "Waste Water",
+      "zinc": "Molten Zinc",
+      "biodiesel": "Biodiesel",
       "glass": "Molten Glass",
+      "sakura.red_wine": "Red Wine",
       "magnesium_lactate": "Magnesium Lactate",
       "sakura.grape_fluid": "Grape Fluid",
       "glass_orange": "Molten Glass (Orange)",
       "brass": "Molten Brass",
       "water": "Water",
       "tannin": "Tannin",
+      "bronze": "Molten Bronze",
+      "sakura.food_oil": "Food Oil",
       "liquid_clay": "Liquid Clay",
+      "freckleberry_wine": "Freckleberry Wine",
+      "sakura.vodka": "Vodka",
+      "silver": "Molten Silver",
       "sakura.rum": "Rum",
       "uranium": "Molten Uranium",
+      "glass_purple": "Molten Glass (Purple)",
+      "wine": "Wine",
       "concrete": "Liquid Concrete",
+      "ironwine": "Iron Wine",
+      "steel": "Molten Steel",
       "sakura.cocoa_liqueur": "Cocoa Liqueur",
       "gloamberry_wine": "Gloamberry Wine",
+      "glass_black": "Molten Glass (Black)",
+      "cobalt": "Molten Cobalt",
       "glass_red": "Molten Glass (Red)",
+      "ethanol": "Ethanol",
       "glass_yellow": "Molten Glass (Yellow)",
+      "cider": "Cider",
+      "gold": "Molten Gold",
       "iridium": "Molten Iridium",
       "lava": "Lava",
       "alumina": "Molten Alumina",
       "honey": "Honey",
       "glass_cyan": "Molten Glass (Cyan)",
       "sakura.liqueur": "Liqueur",
+      "copper": "Molten Copper",
+      "sakura.hot_spring_water": "Hot Spring Water",
       "steam": "Steam",
       "wildberryjuice": "Wildberry Juice",
+      "saltwater": "Salt Water",
       "glass_light_blue": "Molten Glass (Light Blue)",
       "ironberryjuice": "Ironberry Juice",
       "creosote": "Creosote Oil",
+      "electrum": "Molten Electrum",
       "nickel": "Molten Nickel",
       "potion": "Potion",
       "glass_magenta": "Molten Glass (Magenta)",
+      "glass_silver": "Molten Glass (Light Gray)",
       "plantoil": "Plant Oil",
-      "smoke": "Smoke",
+      "sakura.maple_syrup": "Maple Syrup",
+      "constantan": "Molten Constantan",
+      "glass_lime": "Molten Glass (Lime)",
       "glass_blue": "Molten Glass (Blue)",
+      "lead": "Molten Lead",
       "sakura.champagne": "Champagne",
+      "coal_tar": "Coal Tar",
+      "sakura.green_grape_fluid": "Green Grape Fluid",
+      "purifiedwater": "Regular Water",
+      "aluminium": "Molten Aluminium",
+      "lamp_oil": "Lamp Oil",
       "iron": "Molten Iron",
       "alewort": "Ale Wort",
       "milk_of_lime": "Milk of Lime",
+      "wildberrywine": "Wildberry Wine",
       "glass_white": "Molten Glass (White)",
       "glass_green": "Molten Glass (Green)"
     }

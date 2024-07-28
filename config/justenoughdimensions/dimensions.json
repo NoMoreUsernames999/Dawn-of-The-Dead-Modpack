@@ -21,11 +21,6 @@
         "keeploaded": true,
         "worldprovider": "WorldProviderSurfaceJED",
         "require_exact_match": true
-      },
-      "jed": {
-        "CustomDayCycle": true,
-        "DayLength": 48000,
-        "NightLength": 48000
       }
     }
   ]
