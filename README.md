@@ -1,3 +1,5 @@
+# This repository is archived as I am no longer working on MC. Feel free to use its assets if desired, within the limits of the license. 
+
 # The-Dawn-of-The-Dead-Modpack
 **Repository for the dev team of the "Dawn of The Dead" modpack. Also for bug reports.** 
 See the to-do list at the bottom. 
